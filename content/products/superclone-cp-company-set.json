@@ -1,0 +1,28 @@
+{
+  "name": "Superclone CP COMPANY SET ",
+  "price": 135,
+  "images": [
+    "/uploads/IMG_4212.jpeg",
+    "/uploads/IMG_4211.jpeg",
+    "/uploads/IMG_4210.jpeg",
+    "/uploads/IMG_4209.jpeg"
+  ],
+  "description": "Superclone \nCP overshirts £70\nCargo £70\nSizes S to XXL\n\nSet £135 🔥🔥\n\n1/2 days delivery",
+  "categories": [
+    "matching-sets",
+    "mens-clothing"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
