@@ -1,0 +1,69 @@
+{
+  "name": "Superclone  Patek philippe watches with box etc",
+  "price": 135,
+  "images": [
+    "/uploads/IMG_4024.jpeg",
+    "/uploads/IMG_4016.jpeg",
+    "/uploads/IMG_4022.jpeg",
+    "/uploads/IMG_4021.jpeg",
+    "/uploads/IMG_4020.jpeg",
+    "/uploads/IMG_4019.jpeg",
+    "/uploads/IMG_4018.jpeg",
+    "/uploads/IMG_4017.jpeg",
+    "/uploads/IMG_4016-1.jpeg",
+    "/uploads/IMG_4015.jpeg",
+    "/uploads/IMG_4014.jpeg",
+    "/uploads/IMG_4012.jpeg"
+  ],
+  "description": "Superclone \nPatek philippe watches with box etc £135🔥🔥\n1-2 days delivery 🚚",
+  "categories": [
+    "watches-jewellery"
+  ],
+  "colours": [
+    {
+      "name": "Green dial chronograph"
+    },
+    {
+      "name": "Silver skeleton dial"
+    },
+    {
+      "name": "Black dial chronograph"
+    },
+    {
+      "name": "Turquoise dial chronograph"
+    },
+    {
+      "name": "White dial chronograph"
+    },
+    {
+      "name": "Blue dial chronograph"
+    },
+    {
+      "name": "Brown skeleton dial"
+    },
+    {
+      "name": "Exhibition caseback"
+    },
+    {
+      "name": "Silver skeleton"
+    },
+    {
+      "name": "Dark dial "
+    },
+    {
+      "name": "Blue open"
+    },
+    {
+      "name": "Green open"
+    },
+    {
+      "name": "Silver open"
+    }
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
