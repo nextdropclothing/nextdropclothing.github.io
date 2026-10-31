@@ -1,0 +1,43 @@
+{
+  "name": "Superclone Patek philippe watches with box etc ",
+  "price": 130,
+  "images": [
+    "/uploads/IMG_4011.jpeg",
+    "/uploads/IMG_4010.jpeg",
+    "/uploads/IMG_4009.jpeg",
+    "/uploads/IMG_4008.jpeg",
+    "/uploads/IMG_4007.jpeg",
+    "/uploads/IMG_4006.jpeg",
+    "/uploads/IMG_4005.jpeg"
+  ],
+  "description": "Superclone Patek philippe watches with box etc £130🔥🔥\n1-2 days delivery 🚚",
+  "categories": [
+    "watches-jewellery"
+  ],
+  "colours": [
+    {
+      "name": "Skeleton Silver"
+    },
+    {
+      "name": "Skeleton Black"
+    },
+    {
+      "name": "Skeleton Blue"
+    },
+    {
+      "name": "Skeleton Green"
+    },
+    {
+      "name": "Skeleton Light Dial"
+    },
+    {
+      "name": "Skeleton Brown"
+    }
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
