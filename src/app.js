@@ -94,18 +94,18 @@ window.NDinit = () => {
     const P = JSON.parse(dataEl.textContent);
     const form = $('#options');
     const pre = $('#order-message');
-    const sel = { size: '', colour: '' };
+    const sel = { size: '', colour: '', qty: 1 };
 
     function message() {
       if (P.soldOut) {
-        return `Hi NEXTDROP, I'm interested in ${P.ref} — ${P.name}, which is showing as sold out.` +
+        return `Hi NEXTDROP, I'm interested in the ${P.name}, which is showing as sold out.\n${P.url}` +
           (sel.size ? `\n\nSize: ${sel.size}` : '') + (sel.colour ? `${sel.size ? '\n' : '\n\n'}Colour: ${sel.colour}` : '') +
           `\n\nPlease let me know if it will be available again.`;
       }
-      const lines = [`Hi NEXTDROP, I'd like to order ${P.ref} — ${P.name}.`, ''];
+      const lines = [`Hi NEXTDROP, I'd like to order the ${P.name} (${P.price}).`, P.url, ''];
       if (P.hasSizes) lines.push(`Size: ${sel.size}`);
       if (P.hasColours) lines.push(`Colour: ${sel.colour}`);
-      lines.push('Full Name:', 'Delivery Address:', '', 'Please confirm availability, total price and delivery.');
+      lines.push(`Quantity: ${sel.qty}`, 'Full Name:', 'Delivery Address:', '', 'Please confirm availability, total price and delivery.');
       return lines.join('\n');
     }
     function waHref(msg) { return `https://wa.me/${P.wa}?text=${encodeURIComponent(msg)}`; }
@@ -125,6 +125,11 @@ window.NDinit = () => {
         hint.textContent = missing.length ? `Tip: choose your ${missing.join(' and ')} above, or add it in the chat.` : '';
       }
     }
+    document.querySelectorAll('[data-qty]').forEach(b => b.addEventListener('click', () => {
+      sel.qty = Math.min(P.maxQty || 10, Math.max(1, sel.qty + Number(b.dataset.qty)));
+      const o = document.getElementById('qty-out'); if (o) o.textContent = sel.qty;
+      update();
+    }));
     form?.addEventListener('change', e => {
       if (e.target.name === 'size') sel.size = e.target.value;
       if (e.target.name === 'colour') sel.colour = e.target.value;

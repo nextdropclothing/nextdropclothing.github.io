@@ -9,13 +9,12 @@ content:
     type: collection
     path: content/products
     format: json
-    filename: "{fields.ref}.json"
+    filename: "{primary}.json"
     view:
-      fields: [ref, name, price, hidden]
+      fields: [name, price, hidden]
       primary: name
-      sort: [ref, name, price]
+      sort: [name, price]
     fields:
-      - { name: ref, label: "Product reference (e.g. ND014)", type: string, required: true }
       - { name: name, label: "Product name", type: string, required: true }
       - { name: price, label: "Price (£)", type: number, required: true }
       - { name: images, label: "Photos (first one is the main photo)", type: image, list: true }
@@ -51,6 +50,7 @@ content:
             - { value: available, label: "Available to order" }
             - { value: limited, label: "Limited availability" }
             - { value: sold_out, label: "Sold out" }
+      - { name: stock, label: "How many you have (optional — 0 shows Sold out)", type: number }
       - { name: new_arrival, label: "New arrival (shows in New Drops)", type: boolean, default: false }
       - { name: offer, label: "On offer", type: boolean, default: false }
       - { name: was_price, label: "Original price before offer (£, optional)", type: number }
@@ -82,4 +82,4 @@ content:
         type: object
         list: true
         fields:
-          - { name: product, label: "Product reference", type: string }
+          - { name: product, label: "Product name (exactly as written)", type: string }

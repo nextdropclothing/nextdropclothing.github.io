@@ -47,13 +47,15 @@ const allProducts = fs.readdirSync(productsDir)
 const seen = new Set();
 const products = allProducts.filter(p => {
   if (p.hidden) return false;
-  if (!p.ref || !p.name) { warn(`${p._file}: missing product reference or name — skipped.`); return false; }
-  p.ref = String(p.ref).trim().toUpperCase();
-  p.slug = p.ref.toLowerCase().replace(/[^a-z0-9-]+/g, '-');
-  if (seen.has(p.slug)) { warn(`${p._file}: duplicate product reference ${p.ref} — skipped.`); return false; }
+  if (!p.name) { warn(`${p._file}: missing product name — skipped.`); return false; }
+  p.name = String(p.name).trim();
+  p.ref = p.ref ? String(p.ref).trim().toUpperCase() : '';
+  // Web address comes from the product name (e.g. /product/black-logo-tee/). Duplicates get -2, -3…
+  const base = p.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'product';
+  p.slug = base; for (let i = 2; seen.has(p.slug); i++) p.slug = `${base}-${i}`;
   seen.add(p.slug);
   p.price = Number(p.price);
-  if (!Number.isFinite(p.price) || p.price < 0) { warn(`${p.ref}: price missing or invalid — skipped.`); return false; }
+  if (!Number.isFinite(p.price) || p.price < 0) { warn(`${p.name}: price missing or invalid — skipped.`); return false; }
   p.was_price = p.was_price ? Number(p.was_price) : null;
   if (p.was_price && p.was_price <= p.price) p.was_price = null;
   p.images = (p.images || []).map(i => typeof i === 'string' ? i : i?.image).filter(Boolean);
@@ -62,9 +64,11 @@ const products = allProducts.filter(p => {
   p.colours = (p.colours || []).map(c => typeof c === 'string' ? { name: c } : c).filter(c => c?.name);
   p.details = (p.details || []).filter(Boolean);
   p.availability = AVAIL[p.availability] ? p.availability : 'confirm';
+  p.stock = p.stock === '' || p.stock == null || !Number.isFinite(Number(p.stock)) ? null : Math.max(0, Math.floor(Number(p.stock)));
+  if (p.stock === 0) p.availability = 'sold_out';
   p.time = Date.parse(p.date) || 0;
   return true;
-}).sort((a, b) => b.time - a.time || a.ref.localeCompare(b.ref));
+}).sort((a, b) => b.time - a.time || a.name.localeCompare(b.name));
 
 const inCategory = (p, c) => c.rule ? c.rule(p) : p.categories.includes(c.slug);
 const pages = Object.fromEntries(fs.readdirSync(path.join(ROOT, 'content/pages')).filter(f => f.endsWith('.json'))
@@ -173,7 +177,7 @@ const I = {
 /* ------------------------------------------------------------------ */
 let CSS_URL, JS_URL;
 const waLink = msg => `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
-const GENERAL_MSG = `Hi NEXTDROP, I'd like to place an order.\n\nProduct reference:\nProduct name:\nSize:\nColour:\nFull Name:\nDelivery Address:\n\nPlease confirm availability, total price and delivery.`;
+const GENERAL_MSG = `Hi NEXTDROP, I'd like to place an order.\n\nProduct name (or send a screenshot):\nSize:\nColour:\nQuantity:\nFull Name:\nDelivery Address:\n\nPlease confirm availability, total price and delivery.`;
 const ENQUIRY_MSG = `Hi NEXTDROP, I have a question.`;
 
 const contactButtons = ({ msg = ENQUIRY_MSG, light = false, wa = 'MESSAGE ON WHATSAPP' } = {}) => `
@@ -296,12 +300,11 @@ function priceHTML(p) {
 function card(p, idx = 0, opts = {}) {
   const [a, b] = p._img;
   const url = `/product/${p.slug}/`;
-  const search = [p.ref, p.name, p.description, ...p.sizes, ...p.colours.map(c => c.name), ...p.categories.map(c => catBySlug[c].name), p.offer ? 'offer deal sale' : '', p.new_arrival ? 'new drop' : '']
+  const search = [p.name, p.description, ...p.sizes, ...p.colours.map(c => c.name), ...p.categories.map(c => catBySlug[c].name), p.offer ? 'offer deal sale' : '', p.new_arrival ? 'new drop' : '']
     .join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   return `<article class="card" data-idx="${idx}" data-price="${p.price}" data-search="${esc(search)}">
   <a class="card__media" href="${url}" tabindex="-1" aria-hidden="true">${badges(p)}${pic(a, p.name, opts)}${b ? pic(b, '', { ...opts, cls: 'alt' }) : ''}</a>
   <div class="card__body">
-    <span class="ref">${esc(p.ref)}</span>
     <h3 class="card__name"><a href="${url}">${esc(p.name)}</a></h3>
     <div>${priceHTML(p)}</div>
     ${p.sizes.length ? `<div class="card__meta">Sizes: ${esc(sizeSummary(p.sizes))}</div>` : ''}
@@ -314,7 +317,7 @@ const stepsHTML = `<ol class="steps">
   <li><strong>Browse</strong><span>Browse the catalogue and select your favourite product.</span></li>
   <li><strong>Choose</strong><span>Open the product page and choose your size and colour.</span></li>
   <li><strong>Message us</strong><span>Click WhatsApp or Telegram to contact NEXTDROP.</span></li>
-  <li><strong>Send details</strong><span>Send your product reference and order details.</span></li>
+  <li><strong>Send details</strong><span>Send a screenshot of the product (or its name) with your size, colour and quantity.</span></li>
   <li><strong>We confirm</strong><span>Wait for NEXTDROP to confirm the price, availability, delivery details and next steps.</span></li>
 </ol>`;
 
@@ -340,13 +343,13 @@ function catalogue({ cat = null }) {
   </div>
   ${list.length ? `
   <div class="toolbar" id="search">
-    <label class="search"><span class="sr-only">Search products</span>${I.search}<input id="q" type="search" placeholder="Search products or ref" autocomplete="off" enterkeyhint="search"><button class="clear" type="button" aria-label="Clear search">${I.close}</button></label>
+    <label class="search"><span class="sr-only">Search products</span>${I.search}<input id="q" type="search" placeholder="Search products" autocomplete="off" enterkeyhint="search"><button class="clear" type="button" aria-label="Clear search">${I.close}</button></label>
     <label class="sort"><span class="sr-only">Sort products</span><select id="sort"><option value="newest">Newest</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option></select></label>
   </div>
   <p class="result-count" aria-live="polite">${list.length} products</p>
   <div class="grid">${list.map((p, i) => card(p, i)).join('')}</div>
   <div class="empty" data-no-results hidden>
-    <h2>No matches</h2><p>We couldn’t find a product matching your search${cat ? ` in ${esc(cat.name)}` : ''}. Try a different word or a product reference such as ND001.</p>
+    <h2>No matches</h2><p>We couldn’t find a product matching your search${cat ? ` in ${esc(cat.name)}` : ''}. Try a different word, like a colour or type of item.</p>
     <div class="row"><button class="btn" type="button" data-clear-search>Clear search</button>${cat ? '<a class="btn btn--ghost" href="/shop/">Search all products</a>' : ''}</div>
   </div>` : `<div style="padding:32px 0 72px">${emptyCategory}</div>`}
   <div style="height:72px"></div>
@@ -359,7 +362,7 @@ function catalogue({ cat = null }) {
 }
 
 async function home(hero) {
-  const featured = (S.featured || []).map(f => products.find(p => p.ref === String(f.product || f).toUpperCase())).filter(Boolean);
+  const featured = (S.featured || []).map(f => products.find(p => { const k = String(f.product || f).trim().toLowerCase(); return p.ref.toLowerCase() === k || p.name.toLowerCase() === k || p.slug === k; })).filter(Boolean);
   const newArrivals = products.filter(p => p.new_arrival).slice(0, 10);
   const offers = products.filter(p => p.offer).slice(0, 4);
   const tiles = CATEGORIES.map(c => {
@@ -432,11 +435,11 @@ function productPage(p) {
   const firstColour = p.colours.length === 1 ? p.colours[0].name : '';
   const firstSize = p.sizes.length === 1 ? p.sizes[0] : '';
   const defaultMsg = soldOut
-    ? `Hi NEXTDROP, I'm interested in ${p.ref} — ${p.name}, which is showing as sold out.\n\nPlease let me know if it will be available again.`
-    : [`Hi NEXTDROP, I'd like to order ${p.ref} — ${p.name}.`, '', ...(p.sizes.length ? [`Size: ${firstSize}`] : []), ...(p.colours.length ? [`Colour: ${firstColour}`] : []), 'Full Name:', 'Delivery Address:', '', 'Please confirm availability, total price and delivery.'].join('\n');
+    ? `Hi NEXTDROP, I'm interested in the ${p.name}, which is showing as sold out.\n${SITE + url}\n\nPlease let me know if it will be available again.`
+    : [`Hi NEXTDROP, I'd like to order the ${p.name} (${money(p.price)}).`, `${SITE + url}`, '', ...(p.sizes.length ? [`Size: ${firstSize}`] : []), ...(p.colours.length ? [`Colour: ${firstColour}`] : []), 'Quantity: 1', 'Full Name:', 'Delivery Address:', '', 'Please confirm availability, total price and delivery.'].join('\n');
   const related = products.filter(o => o !== p && o.categories.some(c => p.categories.includes(c))).slice(0, 4);
   const plain = String(p.description || '').replace(/[#*_>\[\]()`]/g, '').replace(/\s+/g, ' ').trim();
-  const metaDesc = `${p.name} (${p.ref}) — ${money(p.price)}. ${plain}`.slice(0, 200);
+  const metaDesc = `${p.name} — ${money(p.price)}. ${plain}`.slice(0, 200);
   const waLabel = soldOut ? 'ASK ABOUT RESTOCK' : 'ORDER ON WHATSAPP';
 
   const body = `
@@ -451,7 +454,6 @@ function productPage(p) {
     </div>
     <div class="info">
       <div>
-        <span class="ref">REF ${esc(p.ref)}</span>
         <h1>${esc(p.name)}</h1>
       </div>
       <div style="display:flex;flex-direction:column;gap:8px">
@@ -467,6 +469,7 @@ function productPage(p) {
           ${p.sizes.map(s => `<label class="opt"><input type="radio" name="size" value="${esc(s)}"${firstSize ? ' checked' : ''}><span>${esc(s)}</span></label>`).join('')}
         </div></fieldset>` : ''}
       </form>` : ''}
+      ${p.availability !== 'sold_out' ? `<fieldset class="qty"><legend>Quantity</legend><div class="qty__ctrl"><button type="button" data-qty="-1" aria-label="Decrease quantity">−</button><output id="qty-out">1</output><button type="button" data-qty="1" aria-label="Increase quantity">+</button></div>${p.stock ? `<span class="qty__stock">${p.stock <= 5 ? `Only ${p.stock} left` : `${p.stock} in stock`}</span>` : ''}</fieldset>` : ''}
       <div class="order-box">
         ${WA ? `<a class="btn btn--wa btn--block" data-wa href="${waLink(defaultMsg)}" target="_blank" rel="noopener">${I.wa}${waLabel}</a>` : ''}
         ${TG ? `<a class="btn btn--block" data-tg href="${esc(TG)}" target="_blank" rel="noopener">${I.tg}MESSAGE ON TELEGRAM</a>` : ''}
@@ -489,15 +492,15 @@ function productPage(p) {
   </section>` : '<div style="height:48px"></div>'}
 </div>
 ${WA ? `<div class="sticky-order" aria-hidden="false"><div class="meta"><strong>${esc(p.name)}</strong>${priceHTML(p)}</div><a class="btn btn--wa" data-wa href="${waLink(defaultMsg)}" target="_blank" rel="noopener">${I.wa}${soldOut ? 'ASK' : 'ORDER'}</a></div>` : ''}
-<script type="application/json" id="product-data">${JSON.stringify({ ref: p.ref, name: p.name, wa: WA, hasSizes: p.sizes.length > 0, hasColours: p.colours.length > 0, soldOut }).replace(/</g, '\\u003c')}</script>`;
+<script type="application/json" id="product-data">${JSON.stringify({ name: p.name, price: money(p.price), url: SITE + url, maxQty: p.stock || 10, wa: WA, hasSizes: p.sizes.length > 0, hasColours: p.colours.length > 0, soldOut }).replace(/</g, '\\u003c')}</script>`;
 
   const jsonld = {
-    '@context': 'https://schema.org', '@type': 'Product', name: p.name, sku: p.ref, description: plain,
+    '@context': 'https://schema.org', '@type': 'Product', name: p.name, ...(p.ref ? { sku: p.ref } : {}), description: plain,
     image: imgs.map(i => abs(i.src)), url: SITE + url,
     offers: { '@type': 'Offer', priceCurrency: 'GBP', price: p.price.toFixed(2), url: SITE + url,
       ...(p.availability === 'available' ? { availability: 'https://schema.org/InStock' } : p.availability === 'sold_out' ? { availability: 'https://schema.org/OutOfStock' } : {}) },
   };
-  return layout({ title: `${p.name} (${p.ref})`, description: metaDesc, pathName: url, body, og: { type: 'product', title: `${p.name} — ${money(p.price)} | NEXTDROP`, image: imgs[0]?.og, price: p.price.toFixed(2) }, jsonld });
+  return layout({ title: p.name, description: metaDesc, pathName: url, body, og: { type: 'product', title: `${p.name} — ${money(p.price)} | NEXTDROP`, image: imgs[0]?.og, price: p.price.toFixed(2) }, jsonld });
 }
 
 function howToOrder() {
@@ -509,18 +512,18 @@ function howToOrder() {
 <div class="wrap prose" style="padding-top:40px">
   <h2>Order details to send</h2>
   <p>Please include all of the following in your message:</p>
-  <ul class="req-list"><li>Product reference</li><li>Product name</li><li>Size</li><li>Colour</li><li>Full name</li><li>Delivery address</li></ul>
+  <ul class="req-list"><li>Screenshot or product name</li><li>Size</li><li>Colour</li><li>Quantity</li><li>Full name</li><li>Delivery address</li></ul>
   <div class="callout"><strong class="deliv">Delivery: ${feeText} per order.</strong>Delivery charges and your final order total are confirmed by message before your order is accepted. There is no online checkout, so nothing is charged on this website.</div>
   <div class="callout"><strong>Orders are confirmed manually</strong>Clicking WhatsApp or Telegram opens a chat with us. It does not itself confirm availability or reserve an item. Your order is only confirmed when NEXTDROP replies to confirm the price, availability, delivery details and next steps.</div>
   <h2>Delivery times</h2>
   <p>Delivery times vary by product. We will tell you the expected delivery time for your specific order when we confirm it.</p>
   <h2>Ready to order?</h2>
-  <p>The easiest way is to open a product and tap <strong>Order on WhatsApp</strong> — your product reference and name are filled in for you. Or message us directly:</p>
+  <p>The easiest way is to open a product and tap <strong>Order on WhatsApp</strong> — the product name, price and link are filled in for you. Or just send us a screenshot of the product. Or message us directly:</p>
   <div style="display:grid;gap:10px;max-width:420px">${contactButtons({ msg: GENERAL_MSG, wa: 'ORDER ON WHATSAPP' })}</div>
   ${TG ? `<p style="margin-top:20px">On Telegram, copy and send this template:</p><div class="copy-box"><pre>${esc(GENERAL_MSG)}</pre><button class="link" type="button" data-copy="${esc(GENERAL_MSG)}">Copy template</button></div>` : ''}
   <p style="margin-top:32px"><a class="btn btn--ghost" href="/shop/">Browse the collection</a></p>
 </div>`;
-  return layout({ title: 'How to Order', pathName: '/how-to-order/', body, description: `How to order from NEXTDROP: browse the catalogue, then message us on WhatsApp or Telegram with your product reference. Delivery ${feeText} per order.` });
+  return layout({ title: 'How to Order', pathName: '/how-to-order/', body, description: `How to order from NEXTDROP: browse the catalogue, then message us on WhatsApp or Telegram with a screenshot of the product. Delivery ${feeText} per order.` });
 }
 
 function policyPage(key) {
@@ -538,7 +541,7 @@ function notFound() {
   const body = `<div class="wrap" style="padding:72px var(--pad) 96px;text-align:center;display:grid;gap:18px;justify-items:center">
   <span class="eyebrow">Error 404</span><h1 class="h-display" style="font-size:clamp(34px,6vw,64px)">Page not found</h1>
   <p style="color:var(--grey-500);max-width:46ch;margin:0">This link may be out of date, or the product is no longer listed. Search the catalogue or browse the latest pieces.</p>
-  <form action="/shop/" method="get" class="search" style="width:min(100%,440px)"><label><span class="sr-only">Search products</span>${I.search}<input name="q" type="search" placeholder="Search products or ref"></label></form>
+  <form action="/shop/" method="get" class="search" style="width:min(100%,440px)"><label><span class="sr-only">Search products</span>${I.search}<input name="q" type="search" placeholder="Search products"></label></form>
   <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"><a class="btn" href="/shop/">Browse collection</a><a class="btn btn--ghost" href="/">Home</a></div>
 </div>`;
   return layout({ title: 'Page not found', pathName: '/404', body, description: 'Page not found.' });
@@ -560,7 +563,7 @@ for (const p of products) {
   p._img = [];
   for (const src of p.images) p._img.push(await productImage(src));
   p._img = p._img.filter(Boolean);
-  if (!p._img.length) { warn(`${p.ref} has no photos.`); p._img = [null]; }
+  if (!p._img.length) { warn(`${p.name} has no photos.`); p._img = [null]; }
 }
 const hero = await heroImage(S.hero_image);
 
@@ -575,7 +578,7 @@ writeFile('404.html', notFound());
 // Short links: /nd001 and /ND001 → product page. Old / uppercase product URLs too.
 const redirects = [
   '/admin  /admin/  301',
-  ...products.flatMap(p => [`/${p.slug}  /product/${p.slug}/  301`, `/${p.ref}  /product/${p.slug}/  301`, `/product/${p.ref}  /product/${p.slug}/  301`, `/product/${p.ref}/  /product/${p.slug}/  301`]),
+  ...products.filter(p => p.ref).flatMap(p => [`/${p.ref.toLowerCase()}  /product/${p.slug}/  301`, `/${p.ref}  /product/${p.slug}/  301`]),
 ];
 if (PAGES) {
   // GitHub Pages has no redirect rules: write tiny redirect pages instead.

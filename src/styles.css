@@ -293,3 +293,12 @@ legend output{font-weight:400;letter-spacing:.02em;text-transform:none;color:var
 .fade-in{animation:fade .6s var(--ease) both}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Quantity */
+.qty{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.qty legend{margin-bottom:10px;width:100%}
+.qty__ctrl{display:inline-flex;align-items:center;border:1px solid var(--grey-300)}
+.qty__ctrl button{width:46px;height:46px;border:0;background:#fff;font-size:20px;cursor:pointer}
+.qty__ctrl button:hover{background:var(--grey-100)}
+.qty__ctrl output{min-width:40px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.qty__stock{font-size:13px;color:var(--grey-700)}
