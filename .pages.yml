@@ -1,0 +1,85 @@
+# Product editor for Pages CMS (https://app.pagescms.org) — free, sign in with GitHub.
+media:
+  input: static/uploads
+  output: /uploads
+  categories: [image]
+content:
+  - name: products
+    label: Products
+    type: collection
+    path: content/products
+    format: json
+    filename: "{fields.ref}.json"
+    view:
+      fields: [ref, name, price, hidden]
+      primary: name
+      sort: [ref, name, price]
+    fields:
+      - { name: ref, label: "Product reference (e.g. ND014)", type: string, required: true }
+      - { name: name, label: "Product name", type: string, required: true }
+      - { name: price, label: "Price (£)", type: number, required: true }
+      - { name: images, label: "Photos (first one is the main photo)", type: image, list: true }
+      - { name: description, label: "Description", type: text }
+      - { name: details, label: "Details (one per line item, e.g. 100% cotton)", type: string, list: true }
+      - name: categories
+        label: Categories
+        type: select
+        list: true
+        options:
+          values:
+            - { value: mens-clothing, label: "Men’s Clothing" }
+            - { value: trainers-footwear, label: "Trainers & Footwear" }
+            - { value: womens-clothing, label: "Women’s Clothing" }
+            - { value: watches-jewellery, label: "Watches & Jewellery" }
+            - { value: matching-sets, label: "Matching Sets & Outfits" }
+            - { value: accessories, label: "Accessories" }
+      - { name: sizes, label: "Sizes (add one at a time, e.g. S, M, L)", type: string, list: true }
+      - name: colours
+        label: Colours
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "Colour name", type: string }
+          - { name: hex, label: "Swatch colour code (optional, e.g. #000000)", type: string }
+      - name: availability
+        label: Availability
+        type: select
+        default: confirm
+        options:
+          values:
+            - { value: confirm, label: "Confirm when ordering" }
+            - { value: available, label: "Available to order" }
+            - { value: limited, label: "Limited availability" }
+            - { value: sold_out, label: "Sold out" }
+      - { name: new_arrival, label: "New arrival (shows in New Drops)", type: boolean, default: false }
+      - { name: offer, label: "On offer", type: boolean, default: false }
+      - { name: was_price, label: "Original price before offer (£, optional)", type: number }
+      - { name: hidden, label: "Hide from website", type: boolean, default: false }
+      - { name: demo, label: "Demo product (turn OFF for real products)", type: boolean, default: false }
+      - { name: date, label: "Date added", type: date }
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: site_name, label: "Site name", type: string }
+      - { name: tagline, label: Tagline, type: string }
+      - { name: whatsapp_number, label: "WhatsApp number (e.g. 447947942458)", type: string }
+      - { name: telegram_url, label: "Telegram link", type: string }
+      - { name: instagram_url, label: "Instagram link", type: string }
+      - { name: contact_email, label: "Contact email", type: string }
+      - { name: delivery_fee, label: "Delivery fee (£)", type: number }
+      - { name: announcement, label: "Announcement bar", type: string }
+      - { name: hero_headline, label: "Homepage headline", type: string }
+      - { name: hero_text, label: "Homepage text", type: text }
+      - { name: hero_image, label: "Homepage background image", type: image }
+      - { name: show_demo_banner, label: "Show demo notice", type: boolean }
+      - { name: unlisted, label: "Hide from Google", type: boolean }
+      - { name: custom_domain, label: "Custom domain (e.g. www.nextdrop.co.uk)", type: string }
+      - name: featured
+        label: "Featured products (homepage order)"
+        type: object
+        list: true
+        fields:
+          - { name: product, label: "Product reference", type: string }

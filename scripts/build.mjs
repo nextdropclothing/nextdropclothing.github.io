@@ -38,7 +38,8 @@ const AVAIL = {
 };
 
 const productsDir = path.join(ROOT, 'content/products');
-const allProducts = fs.readdirSync(productsDir).filter(f => f.endsWith('.json')).map(f => {
+const allProducts = fs.readdirSync(productsDir)
+  .filter(f => f.endsWith('.json') && !f.startsWith('_')).map(f => {
   try { return { ...readJSON(path.join(productsDir, f)), _file: f }; }
   catch (e) { warn(`Could not read content/products/${f}: ${e.message}`); return null; }
 }).filter(Boolean);
@@ -57,7 +58,7 @@ const products = allProducts.filter(p => {
   if (p.was_price && p.was_price <= p.price) p.was_price = null;
   p.images = (p.images || []).map(i => typeof i === 'string' ? i : i?.image).filter(Boolean);
   p.categories = (p.categories || []).filter(c => catBySlug[c] && !catBySlug[c].rule);
-  p.sizes = (p.sizes || []).map(s => String(s).trim()).filter(Boolean);
+  p.sizes = (Array.isArray(p.sizes) ? p.sizes : String(p.sizes || '').split(',')).flatMap(s => String(s).split(',')).map(s => s.trim()).filter(Boolean);
   p.colours = (p.colours || []).map(c => typeof c === 'string' ? { name: c } : c).filter(c => c?.name);
   p.details = (p.details || []).filter(Boolean);
   p.availability = AVAIL[p.availability] ? p.availability : 'confirm';
