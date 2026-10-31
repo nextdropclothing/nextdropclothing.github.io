@@ -20,16 +20,22 @@ content:
       - { name: images, label: "Photos (first one is the main photo)", type: image, list: true }
       - { name: description, label: "Description", type: text }
       - { name: details, label: "Details (one per line item, e.g. 100% cotton)", type: string, list: true }
-      - name: categories
+      -       - name: categories
         label: Categories
         type: select
         list: true
         options:
           values:
-            - { value: mens-clothing, label: "Men’s Clothing" }
+            - { value: mens-clothing, label: "Men's Clothing" }
             - { value: trainers-footwear, label: "Trainers & Footwear" }
-            - { value: womens-clothing, label: "Women’s Clothing" }
+            - { value: womens-clothing, label: "Women's Clothing" }
             - { value: watches-jewellery, label: "Watches & Jewellery" }
+            - { value: sunglasses, label: "Sunglasses" }
+            - { value: hats, label: "Hats & Caps" }
+            - { value: scarves, label: "Scarves" }
+            - { value: bags, label: "Bags & Purses" }
+            - { value: wallets, label: "Wallets" }
+            - { value: perfumes, label: "Perfumes & Fragrances" }
             - { value: matching-sets, label: "Matching Sets & Outfits" }
             - { value: accessories, label: "Accessories" }
       - { name: sizes, label: "Sizes (add one at a time, e.g. S, M, L)", type: string, list: true }
