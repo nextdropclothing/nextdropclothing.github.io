@@ -1,0 +1,23 @@
+{
+  "name": "Ralph lauren jumpers",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_4258.jpeg",
+    "/uploads/IMG_4259.jpeg",
+    "/uploads/IMG_4260.jpeg",
+    "/uploads/IMG_4261.jpeg",
+    "/uploads/IMG_4262.jpeg",
+    "/uploads/IMG_4263.jpeg",
+    "/uploads/IMG_4264.jpeg"
+  ],
+  "description": "Ralph lauren jumpers\nSizes S to XL\n\n£50🔥🔥\n1-2 days delivery 🚚",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
