@@ -492,7 +492,7 @@ function productPage(p) {
   </section>` : '<div style="height:48px"></div>'}
 </div>
 ${WA ? `<div class="sticky-order" aria-hidden="false"><div class="meta"><strong>${esc(p.name)}</strong>${priceHTML(p)}</div><a class="btn btn--wa" data-wa href="${waLink(defaultMsg)}" target="_blank" rel="noopener">${I.wa}${soldOut ? 'ASK' : 'ORDER'}</a></div>` : ''}
-<script type="application/json" id="product-data">${JSON.stringify({ name: p.name, price: money(p.price), url: SITE + url, maxQty: p.stock || 10, wa: WA, hasSizes: p.sizes.length > 0, hasColours: p.colours.length > 0, soldOut }).replace(/</g, '\\u003c')}</script>`;
+<script type="application/json" id="product-data">${JSON.stringify({ name: p.name, price: money(p.price), url: SITE + url, maxQty: p.stock || 99, wa: WA, hasSizes: p.sizes.length > 0, hasColours: p.colours.length > 0, soldOut }).replace(/</g, '\\u003c')}</script>`;
 
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'Product', name: p.name, ...(p.ref ? { sku: p.ref } : {}), description: plain,

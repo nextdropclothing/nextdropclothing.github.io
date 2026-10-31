@@ -43,14 +43,13 @@ content:
       - name: availability
         label: Availability
         type: select
-        default: confirm
+        default: available
         options:
           values:
-            - { value: confirm, label: "Confirm when ordering" }
             - { value: available, label: "Available to order" }
+            - { value: confirm, label: "Confirm when ordering" }
             - { value: limited, label: "Limited availability" }
             - { value: sold_out, label: "Sold out" }
-      - { name: stock, label: "How many you have (optional — 0 shows Sold out)", type: number }
       - { name: new_arrival, label: "New arrival (shows in New Drops)", type: boolean, default: false }
       - { name: offer, label: "On offer", type: boolean, default: false }
       - { name: was_price, label: "Original price before offer (£, optional)", type: number }
