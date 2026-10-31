@@ -1,0 +1,20 @@
+{
+  "name": "Men’s hat with gloves set ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_4163.jpeg",
+    "/uploads/IMG_4162.jpeg",
+    "/uploads/IMG_4161.jpeg",
+    "/uploads/IMG_4160.jpeg"
+  ],
+  "description": "Men’s hat with gloves set \n£50 each 🔥🔥\n1-2 days delivery 🚚",
+  "categories": [
+    "accessories"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
