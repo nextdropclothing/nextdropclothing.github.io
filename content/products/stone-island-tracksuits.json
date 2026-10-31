@@ -1,0 +1,28 @@
+{
+  "name": "Stone island tracksuits ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_4214.jpeg",
+    "/uploads/IMG_4213.jpeg",
+    "/uploads/IMG_4215.jpeg"
+  ],
+  "description": "Stone island tracksuits \n2Pcs Set \nSizes S to XXL\n£60 🔥🔥\n\n1/2 days  delivery",
+  "categories": [
+    "matching-sets",
+    "mens-clothing",
+    "womens-clothing"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-10-31"
+}
