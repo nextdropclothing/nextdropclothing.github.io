@@ -1,17 +1,15 @@
 {
   "site_name": "NEXTDROP",
   "tagline": "Your next favourite find.",
-  "site_url": "",
-  "whatsapp_number": "447947942458",
-  "telegram_url": "https://t.me/+MbhYHfmwGZNkNGI1",
-  "instagram_url": "",
-  "contact_email": "",
+  "whatsapp_number": "‪+66 64 772 5092‬",
+  "telegram_url": "https://t.me/James_XAU",
   "delivery_fee": 5,
   "announcement": "Delivery: £5 per order · Order via WhatsApp or Telegram",
   "hero_headline": "FIND YOUR NEXT FAVOURITE.",
   "hero_text": "Discover the latest styles, standout pieces and everyday essentials.",
   "hero_image": "/uploads/hero-default.jpg",
   "show_demo_banner": true,
+  "unlisted": true,
   "featured": [
     {
       "product": "ND001"
@@ -37,7 +35,5 @@
     {
       "product": "ND012"
     }
-  ],
-  "unlisted": true,
-  "custom_domain": ""
+  ]
 }
