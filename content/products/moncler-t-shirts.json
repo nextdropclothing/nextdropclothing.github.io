@@ -1,0 +1,20 @@
+{
+  "name": "Moncler T shirts",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_4465.jpeg",
+    "/uploads/IMG_4462.jpeg",
+    "/uploads/IMG_4464.jpeg",
+    "/uploads/IMG_4463.jpeg"
+  ],
+  "description": "Superclone Moncler T shirts\n £60\n🔥🔥\n\nSizes S to XXL\n\n1/2 days delivery 🚚",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-01"
+}
