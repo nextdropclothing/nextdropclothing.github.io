@@ -1,0 +1,22 @@
+{
+  "name": "LORO PIANA SHOES",
+  "price": 140,
+  "images": [
+    "/uploads/IMG_4578.jpeg",
+    "/uploads/IMG_4583.jpeg",
+    "/uploads/IMG_4586.jpeg",
+    "/uploads/IMG_4594.jpeg",
+    "/uploads/IMG_4598.jpeg",
+    "/uploads/IMG_4603.jpeg"
+  ],
+  "description": "SUPER CLONE \nLORO PIANA SHOES \nSIZES 7 TO 12 \n£140🔥🔥\n\n1/2 days delivery 🚚 \n🔥🔥🔥",
+  "categories": [
+    "trainers-footwear"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-01"
+}
