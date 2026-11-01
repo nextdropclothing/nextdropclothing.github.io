@@ -1,0 +1,19 @@
+{
+  "name": "LV T shirts",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_4577.jpeg",
+    "/uploads/IMG_4576.jpeg",
+    "/uploads/IMG_4575.jpeg"
+  ],
+  "description": "Superclone \nLV T shirts £55\n\n1-2 days delivery 🚚 \n\nSizes S to XXL\n\n🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-01"
+}
