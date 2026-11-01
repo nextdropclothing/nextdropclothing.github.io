@@ -1,0 +1,23 @@
+{
+  "name": "Stone island jackets ",
+  "price": 120,
+  "images": [
+    "/uploads/IMG_4512.jpeg",
+    "/uploads/IMG_4518.jpeg",
+    "/uploads/IMG_4513.jpeg",
+    "/uploads/IMG_4515.jpeg",
+    "/uploads/IMG_4516.jpeg",
+    "/uploads/IMG_4517.jpeg"
+  ],
+  "description": "Superclone \nStone island jackets \nSizes S to XXL\n\n£120🔥🔥 \n1-2 days delivery 🚚",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": true,
+  "was_price": 140,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-01"
+}
