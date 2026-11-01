@@ -1,0 +1,20 @@
+{
+  "name": "Moncler jackets",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_4455.jpeg",
+    "/uploads/IMG_4452.jpeg",
+    "/uploads/IMG_4456.jpeg",
+    "/uploads/IMG_4457.jpeg"
+  ],
+  "description": "Superclone Moncler jackets\nSizes S to XXL\n£75\n\n\n1/2 days delivery 🚚 🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-01"
+}
