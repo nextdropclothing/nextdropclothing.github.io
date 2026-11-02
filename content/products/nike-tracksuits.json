@@ -1,0 +1,22 @@
+{
+  "name": "Nike tracksuits",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_4889.jpeg",
+    "/uploads/IMG_4888.jpeg",
+    "/uploads/IMG_4887.jpeg",
+    "/uploads/IMG_4886.jpeg",
+    "/uploads/IMG_4885.jpeg"
+  ],
+  "description": "Nike tracksuits \nSizes S to XXL \n\n£70🔥🔥\n1-2 days delivery 🚚",
+  "categories": [
+    "mens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-03"
+}
