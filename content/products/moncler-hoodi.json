@@ -1,0 +1,20 @@
+{
+  "name": "Moncler Hoodi",
+  "price": 85,
+  "images": [
+    "/uploads/IMG_4821.jpeg",
+    "/uploads/IMG_4823.jpeg",
+    "/uploads/IMG_4822.jpeg",
+    "/uploads/IMG_4825.jpeg"
+  ],
+  "description": "Superclone Moncler Hoodi\nSizes S to XXL\n\n£85 \n1/2 days delivery 🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-02"
+}
