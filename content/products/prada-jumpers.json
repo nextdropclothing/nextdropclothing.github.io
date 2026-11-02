@@ -1,0 +1,19 @@
+{
+  "name": "Prada jumpers",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_4316.jpeg",
+    "/uploads/IMG_4315.jpeg",
+    "/uploads/IMG_4317.jpeg"
+  ],
+  "description": "Superclone Prada jumpers\nSizes S to XXL\n\n£70 🔥🔥\n\n1/2 days delivery 🚚",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-02"
+}
