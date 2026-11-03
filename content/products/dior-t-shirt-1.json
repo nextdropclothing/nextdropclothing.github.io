@@ -1,0 +1,20 @@
+{
+  "name": "Dior t shirt ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_4573-1.jpeg",
+    "/uploads/IMG_4571-1.jpeg",
+    "/uploads/IMG_4574-1.jpeg",
+    "/uploads/IMG_4572-1.jpeg"
+  ],
+  "description": "Superclone Dior t shirt \nSize S to XXL\n\n£60🔥🔥\n1-2 days delivery 🚚 🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-03"
+}
