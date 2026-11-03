@@ -1,0 +1,20 @@
+{
+  "name": "Prada hoodie ",
+  "price": 90,
+  "images": [
+    "/uploads/IMG_5161.jpeg",
+    "/uploads/IMG_5163.jpeg",
+    "/uploads/IMG_5164.jpeg"
+  ],
+  "description": "Superclone \n Prada hoodie \nSizes S to XXL\n\n£90🔥🔥\n1-2 days delivery 🚚 🔥🔥",
+  "categories": [
+    "mens-clothing",
+    "womens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-03"
+}
