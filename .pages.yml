@@ -26,6 +26,7 @@ content:
         list: true
         options:
           values:
+          value: kids-clothing, label: "kids Clothing" }
             - { value: mens-clothing, label: "Men’s Clothing" }
             - { value: trainers-footwear, label: "Trainers & Footwear" }
             - { value: womens-clothing, label: "Women’s Clothing" }
