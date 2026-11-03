@@ -1,9 +1,15 @@
 {
   "name": "WOMEN ALO SET ",
   "price": 65,
-  "description": "WOMEN ALO SET \n\nIMPORTED QUALITY \n\nSIZE: XS upto XL\n\nPRICE:-£65\n\n1/2 day delivery 🚚",
+  "images": [
+    "/uploads/IMG_5055.jpeg",
+    "/uploads/IMG_5056.jpeg",
+    "/uploads/IMG_5058.jpeg",
+    "/uploads/IMG_5057.jpeg"
+  ],
+  "description": "WOMEN ALO SET \n\nSUPERCLONE \n\nSIZE: XS upto XL\n\nPRICE:-£65\n\n1/2 day delivery 🚚",
   "categories": [
-    "womens-clothing"
+    "matching-sets"
   ],
   "availability": "available",
   "new_arrival": false,
