@@ -1,0 +1,24 @@
+{
+  "name": "Perfume GIFT SETS",
+  "price": 65,
+  "images": [
+    "/uploads/IMG_5062.jpeg",
+    "/uploads/IMG_5063.jpeg",
+    "/uploads/IMG_5064.jpeg",
+    "/uploads/IMG_5065.jpeg",
+    "/uploads/IMG_5066.jpeg",
+    "/uploads/IMG_5067.jpeg",
+    "/uploads/IMG_5068.jpeg",
+    "/uploads/IMG_5069.jpeg"
+  ],
+  "description": "Perfume GIFT SETS\n\nPRICE £65 each\n\n1/2 days delivery 🚚",
+  "categories": [
+    "accessories"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-03"
+}
