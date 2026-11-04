@@ -1,0 +1,21 @@
+{
+  "name": "Essentials T-Shirts ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_5269.jpeg",
+    "/uploads/IMG_5272.jpeg",
+    "/uploads/IMG_5273.jpeg",
+    "/uploads/IMG_5274.jpeg",
+    "/uploads/IMG_5270.jpeg"
+  ],
+  "description": "Essentials T-Shirts \nSize small to xxl\n\n£50🔥🔥\n1-3 days delivery🚚🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
