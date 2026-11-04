@@ -1,0 +1,21 @@
+{
+  "name": "Berghaus Gillets",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_5208.jpeg",
+    "/uploads/IMG_5204.jpeg",
+    "/uploads/IMG_5205.jpeg",
+    "/uploads/IMG_5203.jpeg",
+    "/uploads/IMG_5207.jpeg"
+  ],
+  "description": "Berghaus Gillets\nSizes S to XXL\n\n£55🔥🔥\n1/2 day delivery 🚚 🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-04"
+}
