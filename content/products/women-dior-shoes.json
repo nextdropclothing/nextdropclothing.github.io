@@ -1,0 +1,23 @@
+{
+  "name": "WOMEN DIOR SHOES",
+  "price": 120,
+  "images": [
+    "/uploads/IMG_5286.jpeg",
+    "/uploads/IMG_5287.jpeg",
+    "/uploads/IMG_5288.jpeg",
+    "/uploads/IMG_5289.jpeg",
+    "/uploads/IMG_5291.jpeg",
+    "/uploads/IMG_5290.jpeg"
+  ],
+  "description": "*🔌SUPERCLONE QUALITY WOMEN DIOR SHOES WITH BOX & PAPERWORK SIZES 3 TO 7*\n\nPrice £120",
+  "categories": [
+    "trainers-footwear",
+    "womens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
