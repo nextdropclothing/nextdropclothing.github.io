@@ -1,0 +1,31 @@
+{
+  "name": "Moncler tracksuit Set ",
+  "price": 130,
+  "images": [
+    "/uploads/IMG_5190.jpeg",
+    "/uploads/IMG_5189.jpeg",
+    "/uploads/IMG_5188.jpeg"
+  ],
+  "description": "Superclone \nMoncler tracksuit \nSizes S to XXL\n\n£130\n\n1/2 days delivery 🚚 🔥🔥",
+  "categories": [
+    "matching-sets",
+    "mens-clothing"
+  ],
+  "colours": [
+    {
+      "name": "Black "
+    },
+    {
+      "name": "Gray "
+    },
+    {
+      "name": "Navy "
+    }
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-04"
+}
