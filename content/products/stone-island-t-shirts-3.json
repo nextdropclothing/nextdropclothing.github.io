@@ -1,0 +1,20 @@
+{
+  "name": "Stone island T-Shirts",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_5257.jpeg",
+    "/uploads/IMG_5255.jpeg",
+    "/uploads/IMG_5250.jpeg",
+    "/uploads/IMG_5254.jpeg"
+  ],
+  "description": "Stone island T-Shirts \nSize small to xxl\n\n£45🔥🔥\n1-3 days delivery 🚚 ",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-04"
+}
