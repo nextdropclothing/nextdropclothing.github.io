@@ -1,0 +1,20 @@
+{
+  "name": "Louis vuitton",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_5261.jpeg",
+    "/uploads/IMG_5262.jpeg",
+    "/uploads/IMG_5258.jpeg",
+    "/uploads/IMG_5259.jpeg"
+  ],
+  "description": "Louis vuitton\nSize small to xxl\n\n£50🔥🔥\n1-3 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-04"
+}
