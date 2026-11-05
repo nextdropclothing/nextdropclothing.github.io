@@ -1,0 +1,20 @@
+{
+  "name": "Berghaus Tracksuit",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_5684.jpeg",
+    "/uploads/IMG_5681.jpeg",
+    "/uploads/IMG_5678.jpeg"
+  ],
+  "description": "Berghaus Tracksuit\nSizes S to XL\n\n£75🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
