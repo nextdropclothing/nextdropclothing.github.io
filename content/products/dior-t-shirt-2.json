@@ -1,0 +1,21 @@
+{
+  "name": "DIOR T-SHIRT",
+  "price": 65,
+  "images": [
+    "/uploads/IMG_5660.jpeg",
+    "/uploads/IMG_5656.jpeg",
+    "/uploads/IMG_5655.jpeg",
+    "/uploads/IMG_5659.jpeg",
+    "/uploads/IMG_5657.jpeg"
+  ],
+  "description": "DIOR T-SHIRT\nSIZE S-XXL \n\n£65🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
