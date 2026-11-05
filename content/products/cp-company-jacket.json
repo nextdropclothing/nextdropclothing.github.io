@@ -1,0 +1,21 @@
+{
+  "name": "CP COMPANY Jacket ",
+  "price": 100,
+  "images": [
+    "/uploads/IMG_5676.jpeg",
+    "/uploads/IMG_5677.jpeg",
+    "/uploads/IMG_5672.jpeg",
+    "/uploads/IMG_5673.jpeg",
+    "/uploads/IMG_5674.jpeg"
+  ],
+  "description": "CP COMPANY Jacket \nSmall to XXL \n\n£100🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
