@@ -1,0 +1,21 @@
+{
+  "name": "Nike 3pcs tracksuits",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_5614.jpeg",
+    "/uploads/IMG_5613.jpeg",
+    "/uploads/IMG_5612.jpeg",
+    "/uploads/IMG_5611.jpeg"
+  ],
+  "description": "Nike 3pcs tracksuits\nSizes S to XL\n\n£70🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
