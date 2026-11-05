@@ -1,0 +1,21 @@
+{
+  "name": "Nike men’s Tracksuit set",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_5496.jpeg",
+    "/uploads/IMG_5493.jpeg",
+    "/uploads/IMG_5492.jpeg",
+    "/uploads/IMG_5491.jpeg"
+  ],
+  "description": "Nike men’s Tracksuit set\nSize:  Small to XL \n\n£75🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "categories": [
+    "mens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
