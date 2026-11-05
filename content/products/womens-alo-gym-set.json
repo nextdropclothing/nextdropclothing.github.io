@@ -1,0 +1,21 @@
+{
+  "name": "Womens alo gym set",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_5377.jpeg",
+    "/uploads/IMG_5378.jpeg",
+    "/uploads/IMG_5379.jpeg",
+    "/uploads/IMG_5380.jpeg"
+  ],
+  "description": "Womens alo gym set\nSizes S-M-L\n£50🔥🔥\n1-2 days delivery ",
+  "categories": [
+    "womens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
