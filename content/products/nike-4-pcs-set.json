@@ -1,0 +1,20 @@
+{
+  "name": "NIKE 4 PCS SET",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_5341.jpeg",
+    "/uploads/IMG_5340.jpeg",
+    "/uploads/IMG_5339.jpeg"
+  ],
+  "description": "NIKE 4 PCS SET \nSMALL TO XXL\n£75🔥🔥\n1-2 Days delivery🚚🔥🔥",
+  "categories": [
+    "mens-clothing",
+    "matching-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-05"
+}
