@@ -1,0 +1,24 @@
+{
+  "name": "LV SHOES",
+  "price": 105,
+  "images": [
+    "/uploads/IMG_6145.jpeg",
+    "/uploads/IMG_6147.jpeg",
+    "/uploads/IMG_6144.jpeg",
+    "/uploads/IMG_6143.jpeg",
+    "/uploads/IMG_6140.jpeg",
+    "/uploads/IMG_6139.jpeg",
+    "/uploads/IMG_6138.jpeg",
+    "/uploads/IMG_6137.jpeg"
+  ],
+  "description": "🔥LV SHOES\n\n7 TO 11\n\n£105🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "categories": [
+    "trainers-footwear"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-07"
+}
