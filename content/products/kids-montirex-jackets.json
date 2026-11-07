@@ -7,13 +7,16 @@
     "/uploads/IMG_6237.jpeg"
   ],
   "description": "KIDS MONTIREX JACKETS\nSIZE: 5/6, 7/8, 9/10,\n\n£60🔥🔥\n1-2 days delivery🚚🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
