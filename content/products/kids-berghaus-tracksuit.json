@@ -8,14 +8,16 @@
     "/uploads/IMG_6223.jpeg"
   ],
   "description": "Kids berghaus tracksuit \nsize 4 to 14 yrs old \n\n£55🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
