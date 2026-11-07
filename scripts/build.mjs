@@ -20,30 +20,36 @@ const S = readJSON(path.join(ROOT, 'content/settings.json'));
 
 // ---- Shop structure: departments → sections. Edit these lists to add/rename sections. ----
 export const TYPES = {
-  'trainers': { name: 'Trainers & Shoes', words: 'trainers shoes sneakers footwear runners' },
+  'trainers': { name: 'Shoes & Trainers', words: 'trainers shoes sneakers footwear runners' },
   'jeans': { name: 'Jeans', words: 'jeans denim trousers' },
   'jumpers-hoodies': { name: 'Jumpers & Hoodies', words: 'jumpers hoodies hoody sweatshirts sweats knitwear cardigan' },
   'shorts': { name: 'Shorts', words: 'shorts' },
   'tracksuits': { name: 'Tracksuits', words: 'tracksuits tracksuit tracky joggers' },
   'sets': { name: 'Sets', words: 'sets set co-ords coords outfits matching' },
   't-shirts': { name: 'T-Shirts', words: 't-shirts t shirts tshirts tees tee polo tops' },
-  'jackets': { name: 'Jackets & Coats', words: 'jackets coats puffer gilet outerwear' },
+  'jackets': { name: 'Jackets', words: 'jackets coats puffer gilet outerwear' },
   'bags': { name: 'Bags', words: 'bags bag backpack messenger crossbody handbag' },
-  'wallets': { name: 'Wallets & Purses', words: 'wallets wallet purses purse cardholder' },
+  'wallets': { name: 'Wallets', words: 'wallets wallet purses purse cardholder' },
   'sunglasses': { name: 'Sunglasses', words: 'sunglasses glasses shades eyewear' },
-  'hats': { name: 'Caps & Hats', words: 'hats caps beanies cap beanie hat' },
+  'hats': { name: 'Hats & Caps', words: 'hats caps beanies cap beanie hat' },
   'scarves': { name: 'Scarves & Gloves', words: 'scarves scarf gloves' },
   'watches': { name: 'Watches', words: 'watches watch' },
   'jewellery': { name: 'Jewellery', words: 'jewellery jewelry chains chain rings bracelets' },
   'gift-sets': { name: 'Gift Sets', words: 'gift sets gifts giftset box' },
-  'fragrance': { name: 'Aftershave & Perfume', words: 'aftershave perfume perfumes fragrance cologne scent' },
+  'fragrance': { name: 'Fragrance', words: 'aftershave perfume perfumes fragrance cologne scent' },
 };
 const CLOTHING = ['trainers', 'jeans', 'jumpers-hoodies', 'shorts', 'tracksuits', 'sets', 't-shirts', 'jackets'];
+// Sections shown under each department, in this order. "match" = which product sections appear there.
+const sec = (key, name, match = [key]) => ({ key, name, match });
 const DEPARTMENTS = [
-  { slug: 'men', name: 'Men', title: 'Men’s Clothing', words: "men mens men's man", blurb: 'Menswear, trainers and everyday essentials.', types: CLOTHING },
-  { slug: 'women', name: 'Women', title: 'Women’s Clothing', words: "women womens women's ladies lady", blurb: 'Womenswear, trainers and everyday essentials.', types: CLOTHING },
-  { slug: 'kids', name: 'Kids', title: 'Kids’ Clothing', words: "kids kid children childrens junior juniors boys girls", blurb: 'Kidswear, tracksuits, sets and trainers.', types: CLOTHING },
-  { slug: 'accessories', name: 'Accessories', words: 'accessories', blurb: 'Bags, wallets, sunglasses, hats and the details that finish a look.', types: ['bags', 'hats', 'jewellery', 'watches', 'gift-sets', 'fragrance', 'sunglasses', 'wallets', 'scarves'] },
+  { slug: 'men', name: 'Men', title: 'Men’s Clothing', words: "men mens men's man", blurb: 'Menswear, trainers and everyday essentials.',
+    sections: [sec('trainers', 'Shoes & Trainers'), sec('tracksuits-sets', 'Tracksuits & Sets', ['tracksuits', 'sets']), sec('shorts-sets', 'Shorts & Sets', ['shorts']), sec('t-shirts', 'T-Shirts'), sec('jumpers-hoodies', 'Jumpers & Hoodies'), sec('jackets', 'Jackets'), sec('jeans', 'Jeans')] },
+  { slug: 'women', name: 'Women', title: 'Women’s Clothing', words: "women womens women's ladies lady", blurb: 'Womenswear, trainers and everyday essentials.',
+    sections: [sec('trainers', 'Shoes & Trainers'), sec('sets', 'Sets', ['sets', 'tracksuits', 'shorts']), sec('t-shirts', 'T-Shirts'), sec('jumpers-hoodies', 'Jumpers & Hoodies'), sec('jackets', 'Jackets'), sec('jeans', 'Jeans')] },
+  { slug: 'kids', name: 'Kids', title: 'Kids’ Clothing', words: "kids kid children childrens junior juniors boys girls", blurb: 'Kidswear, tracksuits, sets and trainers.',
+    sections: [sec('trainers', 'Shoes & Trainers'), sec('tracksuits-sets', 'Tracksuits & Sets', ['tracksuits', 'sets']), sec('shorts-sets', 'Shorts & Sets', ['shorts']), sec('jumpers-hoodies', 'Jumpers & Hoodies'), sec('jackets', 'Jackets'), sec('jeans', 'Jeans')] },
+  { slug: 'accessories', name: 'Accessories', title: 'Accessories', words: 'accessories', blurb: 'Bags, wallets, sunglasses, hats and the details that finish a look.',
+    sections: ['bags', 'wallets', 'sunglasses', 'hats', 'scarves', 'watches', 'jewellery', 'fragrance', 'gift-sets'].map(t => sec(t, TYPES[t].name)) },
 ];
 const SPECIAL = [
   { slug: 'new-drops', name: 'New Drops', short: 'New Drops', blurb: 'The latest pieces to land at NEXTDROP.', match: p => p.new_arrival },
@@ -52,8 +58,8 @@ const SPECIAL = [
 // Top level (menu) and every page (departments + their sections + specials)
 export const CATEGORIES = [
   ...DEPARTMENTS.map(d => ({ ...d, short: d.name, path: `/shop/${d.slug}/`, match: p => p.departments.includes(d.slug),
-    children: d.types.map(t => ({ slug: `${d.slug}-${t}`, type: t, name: TYPES[t].name, fullName: d.slug === 'accessories' ? TYPES[t].name : `${d.slug === 'kids' ? 'Kids’' : d.name + '’s'} ${TYPES[t].name}`, parent: d.slug,
-      path: `/shop/${d.slug}/${t}/`, blurb: `${TYPES[t].name} for ${d.name.toLowerCase()}.`, match: p => p.departments.includes(d.slug) && p.types.includes(t) })) })),
+    children: d.sections.map(x => ({ slug: `${d.slug}-${x.key}`, name: x.name, fullName: d.slug === 'accessories' ? x.name : `${d.slug === 'kids' ? 'Kids’' : d.name + '’s'} ${x.name}`, parent: d.slug,
+      path: `/shop/${d.slug}/${x.key}/`, blurb: d.slug === 'accessories' ? `${x.name} at NEXTDROP.` : `${x.name} for ${d.name.toLowerCase()}.`, match: p => p.departments.includes(d.slug) && x.match.some(t => p.types.includes(t)) })) })),
   ...SPECIAL.map(c => ({ ...c, path: `/shop/${c.slug}/` })),
 ];
 const SECTIONS = CATEGORIES.flatMap(c => [c, ...(c.children || [])]);

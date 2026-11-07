@@ -36,22 +36,22 @@ content:
         list: true
         options:
           values:
-            - { value: trainers, label: "Trainers & Shoes" }
+            - { value: trainers, label: "Shoes & Trainers" }
             - { value: jeans, label: "Jeans" }
             - { value: jumpers-hoodies, label: "Jumpers & Hoodies" }
-            - { value: shorts, label: "Shorts" }
-            - { value: tracksuits, label: "Tracksuits" }
+            - { value: shorts, label: "Shorts & shorts sets" }
+            - { value: tracksuits, label: "Tracksuits & tracksuit sets" }
             - { value: sets, label: "Sets" }
             - { value: t-shirts, label: "T-Shirts" }
-            - { value: jackets, label: "Jackets & Coats" }
+            - { value: jackets, label: "Jackets" }
             - { value: bags, label: "Bags (Accessories)" }
-            - { value: hats, label: "Caps & Hats (Accessories)" }
+            - { value: hats, label: "Hats & Caps (Accessories)" }
             - { value: jewellery, label: "Jewellery (Accessories)" }
             - { value: watches, label: "Watches (Accessories)" }
             - { value: gift-sets, label: "Gift Sets (Accessories)" }
-            - { value: fragrance, label: "Aftershave & Perfume (Accessories)" }
+            - { value: fragrance, label: "Fragrance / aftershave / perfume (Accessories)" }
             - { value: sunglasses, label: "Sunglasses (Accessories)" }
-            - { value: wallets, label: "Wallets & Purses (Accessories)" }
+            - { value: wallets, label: "Wallets & purses (Accessories)" }
             - { value: scarves, label: "Scarves & Gloves (Accessories)" }
       - { name: sizes, label: "Sizes (add one at a time, e.g. S, M, L)", type: string, list: true }
       - name: colours
