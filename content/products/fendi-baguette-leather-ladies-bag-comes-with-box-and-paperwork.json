@@ -9,15 +9,17 @@
     "/uploads/IMG_5073.jpeg"
   ],
   "description": "FENDI Baguette leather ladies bag Comes with box and paperwork \n\nSuperclone quality \n\nWas £120 now £100 for limited time offer 🔥🔥\n1/2 days delivery 🚚 ",
-  "categories": [
-    "watches-jewellery",
+  "departments": [
     "accessories"
+  ],
+  "types": [
+    "bags"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": true,
   "was_price": 120,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
