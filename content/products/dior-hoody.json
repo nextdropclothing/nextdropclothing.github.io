@@ -7,13 +7,16 @@
     "/uploads/IMG_4553.jpeg"
   ],
   "description": "SUPER CLONE DIOR HOODY \nSIZES SMALL TO XXL\n\n£80🔥🔥\n\n1/2 days delivery 🚚 \n🔥🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
