@@ -7,8 +7,11 @@
     "/uploads/IMG_4983.jpeg"
   ],
   "description": "Mens boss tracksuit \nX\n\nSIZE S UPTO XXL \nX\nPRICE £65\n\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
