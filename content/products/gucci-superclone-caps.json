@@ -7,13 +7,16 @@
     "/uploads/IMG_4137.jpeg"
   ],
   "description": "Gucci Superclone cap\n£45 🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
+  "departments": [
     "accessories"
+  ],
+  "types": [
+    "hats"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
