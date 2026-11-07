@@ -8,13 +8,16 @@
     "/uploads/IMG_5037.jpeg"
   ],
   "description": "Kids moncler tracksuit \nSize 7.8 upto 13\n\nPRICE £55\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
