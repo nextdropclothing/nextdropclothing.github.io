@@ -9,14 +9,16 @@
     "/uploads/IMG_5086.jpeg"
   ],
   "description": "DIOR LADIES BAG COME WITH BOX ETC \n\nSUPERCLONE QUALITY \n\n£115🔥\n1/2 days delivery 🚚",
-  "categories": [
-    "accessories",
-    "watches-jewellery"
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "bags"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
