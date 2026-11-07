@@ -9,13 +9,16 @@
     "/uploads/IMG_5674.jpeg"
   ],
   "description": "CP COMPANY Jacket \nSmall to XXL \n\n£100🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
