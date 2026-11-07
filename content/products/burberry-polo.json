@@ -11,13 +11,16 @@
     "/uploads/IMG_4503.jpeg"
   ],
   "description": "Superclone Burberry Polo \n £60\n\nSizes S to XXL 🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
