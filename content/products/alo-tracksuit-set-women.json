@@ -10,9 +10,11 @@
     "/uploads/IMG_5423.jpeg"
   ],
   "description": "Women’s Alo Tracksuit \nSize — XS-S-M-L-XL \n\n£60🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "womens-clothing",
-    "matching-sets"
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
