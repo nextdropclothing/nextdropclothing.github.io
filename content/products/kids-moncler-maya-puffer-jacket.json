@@ -9,13 +9,16 @@
     "/uploads/IMG_6112.jpeg"
   ],
   "description": "Kids Moncler Maya Puffer Jacket\n\n✨ Glossy black padded design\n📱 Moncler badge with NFC scan\n🧥 Warm, stylish & comfortable\n\n📏 Ages available: 1–2, 3–4, 5–6, 7–8, 9–10, 11–12, 13–14 & 15–16 years\n\n£90🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
