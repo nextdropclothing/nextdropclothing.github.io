@@ -7,13 +7,16 @@
     "/uploads/IMG_5334.jpeg"
   ],
   "description": "CASABLANCA JUMPERS \nSIZES S TO XXL \n£65🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
