@@ -20,13 +20,16 @@
     "/uploads/IMG_5317.jpeg"
   ],
   "description": "🔥NEW COLOURS \n\nLV TRIO MESSENGER BAG/ MAN BAG  BOXED AVAILABLE \n\n£95🔥🔥\n1-3 days delivery 🚚🔥🔥",
-  "categories": [
+  "departments": [
     "accessories"
   ],
+  "types": [
+    "bags"
+  ],
   "availability": "available",
-  "new_arrival": true,
+  "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
