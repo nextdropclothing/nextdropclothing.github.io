@@ -9,12 +9,15 @@
     "/uploads/IMG_4799.jpeg"
   ],
   "description": "Superclone Canada Goose Macmillan Jackets\nSizes Small - XXL\n£130\n\n1/2 days delivery 🚚 \n🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": true,
+  "offer": false,
   "was_price": 150,
   "hidden": true,
   "demo": false,
