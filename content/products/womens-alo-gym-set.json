@@ -8,14 +8,16 @@
     "/uploads/IMG_5380.jpeg"
   ],
   "description": "Womens alo gym set\nSizes S-M-L\n£50🔥🔥\n1-2 days delivery ",
-  "categories": [
-    "womens-clothing",
-    "matching-sets"
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
-  "new_arrival": false,
+  "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
