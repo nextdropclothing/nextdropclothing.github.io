@@ -10,15 +10,16 @@
     "/uploads/IMG_4570.jpeg"
   ],
   "description": "Superclone Womes Uggs\nSizes 3 to 8\n\n£45🔥🔥\n\n1/2 days delivery 🚚",
-  "categories": [
-    "trainers-footwear",
-    "accessories",
-    "womens-clothing"
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "trainers"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
