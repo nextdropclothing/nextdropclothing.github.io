@@ -5,13 +5,17 @@
     "/uploads/IMG_4166.jpeg"
   ],
   "description": "Canada goose hat and gloves set \n£55\n1/2 days delivery 🚚",
-  "categories": [
+  "departments": [
     "accessories"
+  ],
+  "types": [
+    "hats",
+    "gift-sets"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
