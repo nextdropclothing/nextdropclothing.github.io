@@ -1,5 +1,5 @@
 {
-  "name": "Alo tracksuit girls ",
+  "name": "Alo tracksuit ",
   "price": 45,
   "images": [
     "/uploads/IMG_5389.jpeg",
@@ -7,15 +7,17 @@
     "/uploads/IMG_5391.jpeg",
     "/uploads/IMG_5390.jpeg"
   ],
-  "description": "Alo tracksuit girls \n\nSIZE: 7/8 TO 13 YEAR\n\n£45🔥🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "womens-clothing",
-    "matching-sets"
+  "description": "Alo tracksuit kids\n\nSIZE: 7/8 TO 13 YEAR\n\n£45🔥🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
