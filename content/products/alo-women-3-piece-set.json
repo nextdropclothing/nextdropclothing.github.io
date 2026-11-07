@@ -1,5 +1,5 @@
 {
-  "name": "Alo women 3 piece set ",
+  "name": "Alo 3 piece set ",
   "price": 55,
   "images": [
     "/uploads/IMG_5410.jpeg",
@@ -7,13 +7,16 @@
     "/uploads/IMG_5408.jpeg"
   ],
   "description": "Alo women 3 piece set \n\nSizes XS-S-M-L-XL\n\n£55🔥🔥\n1-2 day delivery 🚚🔥🔥",
-  "categories": [
-    "womens-clothing"
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
