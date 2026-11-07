@@ -16,9 +16,9 @@
     "jumpers-hoodies"
   ],
   "availability": "available",
-  "new_arrival": true,
+  "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
