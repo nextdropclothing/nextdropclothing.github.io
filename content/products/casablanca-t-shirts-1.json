@@ -7,13 +7,16 @@
     "/uploads/IMG_6150.jpeg"
   ],
   "description": "SUPER CLONE CASABLANCA T-SHIRTS \n\nSIZE S-XXL \n\n£55🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
