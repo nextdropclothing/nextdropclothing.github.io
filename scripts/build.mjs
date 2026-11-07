@@ -18,17 +18,51 @@ const warn = m => { warnings.push(m); };
 const readJSON = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 const S = readJSON(path.join(ROOT, 'content/settings.json'));
 
-export const CATEGORIES = [
-  { slug: 'mens-clothing', name: "Men’s Clothing", short: 'Men', blurb: 'Hoodies, tees, trousers and everyday menswear.' },
-  { slug: 'trainers-footwear', name: 'Trainers & Footwear', short: 'Footwear', blurb: 'Trainers and footwear for every day.' },
-  { slug: 'womens-clothing', name: "Women’s Clothing", short: 'Women', blurb: 'Dresses, tops, outerwear and everyday womenswear.' },
-  { slug: 'watches-jewellery', name: 'Watches & Jewellery', short: 'Watches & Jewellery', blurb: 'Watches, chains and finishing pieces.' },
-  { slug: 'matching-sets', name: 'Matching Sets & Outfits', short: 'Sets', blurb: 'Co-ords, tracksuits and complete outfits.' },
-  { slug: 'accessories', name: 'Accessories', short: 'Accessories', blurb: 'Bags, hats and the details that finish a look.' },
-  { slug: 'offers', name: 'Offers & Special Deals', short: 'Offers', blurb: 'Current offers on selected pieces.', rule: p => p.offer },
-  { slug: 'new-drops', name: 'New Drops', short: 'New Drops', blurb: 'The latest pieces to land at NEXTDROP.', rule: p => p.new_arrival },
+// ---- Shop structure: departments → sections. Edit these lists to add/rename sections. ----
+export const TYPES = {
+  'trainers': { name: 'Trainers & Shoes', words: 'trainers shoes sneakers footwear runners' },
+  'jeans': { name: 'Jeans', words: 'jeans denim trousers' },
+  'jumpers-hoodies': { name: 'Jumpers & Hoodies', words: 'jumpers hoodies hoody sweatshirts sweats knitwear cardigan' },
+  'shorts': { name: 'Shorts', words: 'shorts' },
+  'tracksuits': { name: 'Tracksuits', words: 'tracksuits tracksuit tracky joggers' },
+  'sets': { name: 'Sets', words: 'sets set co-ords coords outfits matching' },
+  't-shirts': { name: 'T-Shirts', words: 't-shirts t shirts tshirts tees tee polo tops' },
+  'jackets': { name: 'Jackets & Coats', words: 'jackets coats puffer gilet outerwear' },
+  'bags': { name: 'Bags', words: 'bags bag backpack messenger crossbody handbag' },
+  'wallets': { name: 'Wallets & Purses', words: 'wallets wallet purses purse cardholder' },
+  'sunglasses': { name: 'Sunglasses', words: 'sunglasses glasses shades eyewear' },
+  'hats': { name: 'Caps & Hats', words: 'hats caps beanies cap beanie hat' },
+  'scarves': { name: 'Scarves & Gloves', words: 'scarves scarf gloves' },
+  'watches': { name: 'Watches', words: 'watches watch' },
+  'jewellery': { name: 'Jewellery', words: 'jewellery jewelry chains chain rings bracelets' },
+  'gift-sets': { name: 'Gift Sets', words: 'gift sets gifts giftset box' },
+  'fragrance': { name: 'Aftershave & Perfume', words: 'aftershave perfume perfumes fragrance cologne scent' },
+};
+const CLOTHING = ['trainers', 'jeans', 'jumpers-hoodies', 'shorts', 'tracksuits', 'sets', 't-shirts', 'jackets'];
+const DEPARTMENTS = [
+  { slug: 'men', name: 'Men', title: 'Men’s Clothing', words: "men mens men's man", blurb: 'Menswear, trainers and everyday essentials.', types: CLOTHING },
+  { slug: 'women', name: 'Women', title: 'Women’s Clothing', words: "women womens women's ladies lady", blurb: 'Womenswear, trainers and everyday essentials.', types: CLOTHING },
+  { slug: 'kids', name: 'Kids', title: 'Kids’ Clothing', words: "kids kid children childrens junior juniors boys girls", blurb: 'Kidswear, tracksuits, sets and trainers.', types: CLOTHING },
+  { slug: 'accessories', name: 'Accessories', words: 'accessories', blurb: 'Bags, wallets, sunglasses, hats and the details that finish a look.', types: ['bags', 'hats', 'jewellery', 'watches', 'gift-sets', 'fragrance', 'sunglasses', 'wallets', 'scarves'] },
 ];
-const catBySlug = Object.fromEntries(CATEGORIES.map(c => [c.slug, c]));
+const SPECIAL = [
+  { slug: 'new-drops', name: 'New Drops', short: 'New Drops', blurb: 'The latest pieces to land at NEXTDROP.', match: p => p.new_arrival },
+  { slug: 'offers', name: 'Offers', short: 'Offers', blurb: 'Current offers on selected pieces.', match: p => p.offer },
+];
+// Top level (menu) and every page (departments + their sections + specials)
+export const CATEGORIES = [
+  ...DEPARTMENTS.map(d => ({ ...d, short: d.name, path: `/shop/${d.slug}/`, match: p => p.departments.includes(d.slug),
+    children: d.types.map(t => ({ slug: `${d.slug}-${t}`, type: t, name: TYPES[t].name, fullName: d.slug === 'accessories' ? TYPES[t].name : `${d.slug === 'kids' ? 'Kids’' : d.name + '’s'} ${TYPES[t].name}`, parent: d.slug,
+      path: `/shop/${d.slug}/${t}/`, blurb: `${TYPES[t].name} for ${d.name.toLowerCase()}.`, match: p => p.departments.includes(d.slug) && p.types.includes(t) })) })),
+  ...SPECIAL.map(c => ({ ...c, path: `/shop/${c.slug}/` })),
+];
+const SECTIONS = CATEGORIES.flatMap(c => [c, ...(c.children || [])]);
+const catBySlug = Object.fromEntries(SECTIONS.map(c => [c.slug, c]));
+// Old category names (before departments existed) still work.
+const LEGACY = {
+  'mens-clothing': { d: ['men'] }, 'womens-clothing': { d: ['women'] }, 'trainers-footwear': { t: ['trainers'] },
+  'watches-jewellery': { d: ['accessories'], t: ['watches', 'jewellery'] }, 'matching-sets': { t: ['sets'] }, 'accessories': { d: ['accessories'] },
+};
 
 const AVAIL = {
   confirm: { label: 'Availability confirmed when you order', cls: 'confirm' },
@@ -59,7 +93,14 @@ const products = allProducts.filter(p => {
   p.was_price = p.was_price ? Number(p.was_price) : null;
   if (p.was_price && p.was_price <= p.price) p.was_price = null;
   p.images = (p.images || []).map(i => typeof i === 'string' ? i : i?.image).filter(Boolean);
-  p.categories = (p.categories || []).filter(c => catBySlug[c] && !catBySlug[c].rule);
+  const asList = v => (Array.isArray(v) ? v : v ? [v] : []).map(x => String(x).trim()).filter(Boolean);
+  p.departments = asList(p.departments ?? p.department).filter(d => DEPARTMENTS.some(x => x.slug === d));
+  p.types = asList(p.types ?? p.type).filter(t => TYPES[t]);
+  for (const c of asList(p.categories)) { const l = LEGACY[c]; if (l) { p.departments.push(...(l.d || [])); p.types.push(...(l.t || [])); } }
+  if (!p.departments.length && p.types.some(t => !CLOTHING.includes(t))) p.departments.push('accessories');
+  p.departments = [...new Set(p.departments)]; p.types = [...new Set(p.types)];
+  // Sections this product lives in (most specific first) — used for breadcrumbs and "You may also like"
+  p.sections = SECTIONS.filter(c => c.parent && c.match(p)).concat(CATEGORIES.filter(c => c.children && c.match(p)));
   p.sizes = (Array.isArray(p.sizes) ? p.sizes : String(p.sizes || '').split(',')).flatMap(s => String(s).split(',')).map(s => s.trim()).filter(Boolean);
   p.colours = (p.colours || []).map(c => typeof c === 'string' ? { name: c } : c).filter(c => c?.name);
   p.details = (p.details || []).filter(Boolean);
@@ -70,7 +111,7 @@ const products = allProducts.filter(p => {
   return true;
 }).sort((a, b) => b.time - a.time || a.name.localeCompare(b.name));
 
-const inCategory = (p, c) => c.rule ? c.rule(p) : p.categories.includes(c.slug);
+const inCategory = (p, c) => c.match(p);
 const pages = Object.fromEntries(fs.readdirSync(path.join(ROOT, 'content/pages')).filter(f => f.endsWith('.json'))
   .map(f => [f.replace('.json', ''), readJSON(path.join(ROOT, 'content/pages', f))]));
 
@@ -188,7 +229,7 @@ function layout({ title, description, pathName, body, og = {}, jsonld = null, cu
   const fullTitle = title ? `${title} | NEXTDROP` : `NEXTDROP — ${S.tagline || 'Your next favourite find.'}`;
   const url = SITE + pathName;
   const ogImg = og.image ? abs(og.image) : abs('/brand/og-default.jpg');
-  const navLink = c => `<a href="/shop/${c.slug}/"${current === c.slug ? ' aria-current="page"' : ''}${c.slug === 'offers' ? ' class="is-offer"' : ''}>${esc(c.short)}</a>`;
+  const navLink = c => `<a href="${c.path}"${(current === c.slug || catBySlug[current]?.parent === c.slug) ? ' aria-current="page"' : ''}${c.slug === 'offers' ? ' class="is-offer"' : ''}>${esc(c.short)}</a>`;
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -244,7 +285,7 @@ ${hasDemo && S.show_demo_banner !== false ? `<div class="demo-bar"><strong>Previ
     <div class="drawer__head"><a class="wordmark" href="/"><b>NEXT</b><span>DROP</span></a><button class="icon-btn drawer__close" type="button" aria-label="Close menu" data-close-drawer>${I.close}</button></div>
     <nav aria-label="Menu">
       <a href="/shop/">Shop all <span>${products.length}</span></a>
-      ${CATEGORIES.map(c => `<a href="/shop/${c.slug}/">${esc(c.name)} <span>${products.filter(p => inCategory(p, c)).length}</span></a>`).join('')}
+      ${CATEGORIES.map(c => c.children ? `<details class="drawer__group"><summary>${esc(c.name)} <span>${products.filter(p => c.match(p)).length}</span></summary><div><a href="${c.path}">All ${esc(c.name)}</a>${c.children.map(k => `<a href="${k.path}">${esc(k.name)} <span>${products.filter(p => k.match(p)).length}</span></a>`).join('')}</div></details>` : `<a href="${c.path}">${esc(c.name)} <span>${products.filter(p => c.match(p)).length}</span></a>`).join('')}
       <a href="/how-to-order/">How to order</a>
       <a href="/delivery/">Delivery</a>
       <a href="/contact/">Contact</a>
@@ -265,7 +306,7 @@ ${body}
           ${S.instagram_url ? `<a class="btn btn--ghost-light btn--block" href="${esc(S.instagram_url)}" target="_blank" rel="noopener">${I.ig}FOLLOW ON INSTAGRAM</a>` : ''}
         </div>
       </div>
-      <div><h2>Shop</h2><ul><li><a href="/shop/">Shop all</a></li>${CATEGORIES.map(c => `<li><a href="/shop/${c.slug}/">${esc(c.name)}</a></li>`).join('')}</ul></div>
+      <div><h2>Shop</h2><ul><li><a href="/shop/">Shop all</a></li>${CATEGORIES.map(c => `<li><a href="${c.path}">${esc(c.name)}</a></li>`).join('')}</ul></div>
       <div><h2>Help</h2><ul><li><a href="/how-to-order/">How to order</a></li><li><a href="/delivery/">Delivery</a></li><li><a href="/returns/">Returns &amp; refunds</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><h2>Policies</h2><ul><li><a href="/terms/">Terms of sale</a></li><li><a href="/privacy/">Privacy policy</a></li></ul></div>
     </div>
@@ -300,8 +341,8 @@ function priceHTML(p) {
 function card(p, idx = 0, opts = {}) {
   const [a, b] = p._img;
   const url = `/product/${p.slug}/`;
-  const search = [p.name, p.description, ...p.sizes, ...p.colours.map(c => c.name), ...p.categories.map(c => catBySlug[c].name), p.offer ? 'offer deal sale' : '', p.new_arrival ? 'new drop' : '']
-    .join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const search = [p.name, p.description, ...p.sizes, ...p.colours.map(c => c.name), ...p.departments.map(d => DEPARTMENTS.find(x => x.slug === d).words), ...p.types.map(t => `${TYPES[t].name} ${TYPES[t].words}`), p.offer ? 'offer offers deal sale' : '', p.new_arrival ? 'new drop drops arrivals' : '']
+    .join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[’'`]/g, '');
   return `<article class="card" data-idx="${idx}" data-price="${p.price}" data-search="${esc(search)}">
   <a class="card__media" href="${url}" tabindex="-1" aria-hidden="true">${badges(p)}${pic(a, p.name, opts)}${b ? pic(b, '', { ...opts, cls: 'alt' }) : ''}</a>
   <div class="card__body">
@@ -326,8 +367,10 @@ const stepsHTML = `<ol class="steps">
 /* ------------------------------------------------------------------ */
 function catalogue({ cat = null }) {
   const list = cat ? products.filter(p => inCategory(p, cat)) : products;
-  const title = cat ? cat.name : 'Shop all';
-  const chips = [`<a class="chip" href="/shop/"${!cat ? ' aria-current="page"' : ''}>All</a>`, ...CATEGORIES.map(c => `<a class="chip" href="/shop/${c.slug}/"${cat?.slug === c.slug ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)].join('');
+  const dept = cat ? (cat.children ? cat : catBySlug[cat.parent]) : null;
+  const title = cat ? (cat.parent ? cat.fullName : cat.title || cat.name) : 'Shop all';
+  const chips = [`<a class="chip" href="/shop/"${!cat ? ' aria-current="page"' : ''}>All</a>`, ...CATEGORIES.map(c => `<a class="chip" href="${c.path}"${(cat?.slug === c.slug || cat?.parent === c.slug) ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)].join('');
+  const subchips = dept ? `<nav class="subnav" aria-label="${esc(dept.name)} sections"><a class="subnav__item" href="${dept.path}"${cat === dept ? ' aria-current="page"' : ''}><strong>All ${esc(dept.name)}</strong><span>${products.filter(p => dept.match(p)).length}</span></a>${dept.children.map(k => { const n = products.filter(p => k.match(p)).length; return `<a class="subnav__item${n ? '' : ' is-empty'}" href="${k.path}"${cat?.slug === k.slug ? ' aria-current="page"' : ''}><strong>${esc(k.name)}</strong><span>${n || 'Soon'}</span></a>`; }).join('')}</nav>` : '';
   const emptyCategory = `<div class="empty">
       <h2>${!products.length ? 'New collection coming soon' : cat?.slug === 'offers' ? 'No offers right now' : 'Nothing here yet'}</h2>
       <p>${cat?.slug === 'offers' ? 'There are no current offers. Check back soon, or browse the full collection.' : `New pieces for ${esc(cat?.name || 'this category')} are on the way. Browse the full collection, or message us to ask what’s coming.`}</p>
@@ -336,10 +379,11 @@ function catalogue({ cat = null }) {
   const body = `
 <section class="wrap" data-catalogue>
   <div class="page-head">
-    <div class="crumbs"><a href="/">Home</a> / ${cat ? `<a href="/shop/">Shop</a> / ${esc(cat.name)}` : 'Shop'}</div>
+    <div class="crumbs"><a href="/">Home</a> / ${cat ? `<a href="/shop/">Shop</a> / ${cat.parent ? `<a href="${dept.path}">${esc(dept.name)}</a> / ${esc(cat.name)}` : esc(cat.name)}` : 'Shop'}</div>
     <h1 class="h-display">${esc(title)}</h1>
     <p>${esc(cat ? cat.blurb : 'Browse every piece in the NEXTDROP collection. Prices in GBP — order by WhatsApp or Telegram.')}</p>
-    <nav class="chips" aria-label="Categories">${chips}</nav>
+    <nav class="chips" aria-label="Departments">${chips}</nav>
+    ${subchips}
   </div>
   ${list.length ? `
   <div class="toolbar" id="search">
@@ -355,8 +399,8 @@ function catalogue({ cat = null }) {
   <div style="height:72px"></div>
 </section>`;
   return layout({
-    title, pathName: cat ? `/shop/${cat.slug}/` : '/shop/', current: cat?.slug,
-    description: cat ? `${cat.name} at NEXTDROP. ${cat.blurb} Order by WhatsApp or Telegram. Delivery ${feeText} per order.` : `Browse the NEXTDROP collection: clothing, trainers, watches, jewellery and accessories. Order by WhatsApp or Telegram.`,
+    title, pathName: cat ? cat.path : '/shop/', current: cat?.slug,
+    description: cat ? `${title} at NEXTDROP. ${cat.blurb} Order by WhatsApp or Telegram. Delivery ${feeText} per order.` : `Browse the NEXTDROP collection: clothing, trainers, watches, jewellery and accessories. Order by WhatsApp or Telegram.`,
     body, og: { image: list[0]?._img[0]?.og },
   });
 }
@@ -368,7 +412,7 @@ async function home(hero) {
   const tiles = CATEGORIES.map(c => {
     const list = products.filter(p => inCategory(p, c));
     const img = list[0]?._img[0];
-    return `<a class="cat-tile${img ? '' : ' cat-tile--empty'}" href="/shop/${c.slug}/">${img ? pic(img, '', { sizes: '(min-width:760px) 25vw, 50vw' }) : '<img src="/brand/monogram.png" alt="" width="400" height="400" loading="lazy">'}
+    return `<a class="cat-tile${img ? '' : ' cat-tile--empty'}" href="${c.path}">${img ? pic(img, '', { sizes: '(min-width:760px) 25vw, 50vw' }) : '<img src="/brand/monogram.png" alt="" width="400" height="400" loading="lazy">'}
       <span class="cat-tile__label"><strong>${esc(c.name)}</strong><span>${list.length ? `${list.length} item${list.length === 1 ? '' : 's'}` : 'Coming soon'}</span></span></a>`;
   }).join('');
   const body = `
@@ -438,14 +482,14 @@ function productPage(p) {
   const defaultMsg = soldOut
     ? `Hi NEXTDROP, I'm interested in the ${p.name}, which is showing as sold out.\n${SITE + url}\n\nPlease let me know if it will be available again.`
     : [`Hi NEXTDROP, I'd like to order the ${p.name} (${money(p.price)}).`, `${SITE + url}`, '', ...(p.sizes.length ? [`Size: ${firstSize}`] : []), ...(p.colours.length ? [`Colour: ${firstColour}`] : []), 'Quantity: 1', 'Full Name:', 'Delivery Address:', '', 'Please confirm availability, total price and delivery.'].join('\n');
-  const related = products.filter(o => o !== p && o.categories.some(c => p.categories.includes(c))).slice(0, 4);
+  const home0 = p.sections[0]; const related = products.filter(o => o !== p && home0 && home0.match(o)).slice(0, 4);
   const plain = String(p.description || '').replace(/[#*_>\[\]()`]/g, '').replace(/\s+/g, ' ').trim();
   const metaDesc = `${p.name} — ${money(p.price)}. ${plain}`.slice(0, 200);
   const waLabel = soldOut ? 'ASK ABOUT RESTOCK' : 'ORDER ON WHATSAPP';
 
   const body = `
 <div class="wrap">
-  <div class="crumbs" style="padding-top:18px"><a href="/">Home</a> / <a href="/shop/">Shop</a>${p.categories[0] ? ` / <a href="/shop/${p.categories[0]}/">${esc(catBySlug[p.categories[0]].name)}</a>` : ''}</div>
+  <div class="crumbs" style="padding-top:18px"><a href="/">Home</a> / <a href="/shop/">Shop</a>${home0 ? (home0.parent ? ` / <a href="${catBySlug[home0.parent].path}">${esc(catBySlug[home0.parent].name)}</a> / <a href="${home0.path}">${esc(home0.name)}</a>` : ` / <a href="${home0.path}">${esc(home0.name)}</a>`) : ''}</div>
   <div class="pdp">
     <div class="gallery">
       <div class="gallery__track${imgs.length < 2 ? ' single' : ''}">
@@ -488,7 +532,7 @@ function productPage(p) {
     </div>
   </div>
   ${related.length ? `<section class="section" style="padding-top:24px;border-top:1px solid var(--grey-200)">
-    <div class="section__head"><h2 class="h-section">You may also like</h2><a class="link" href="/shop/${p.categories[0]}/">View all</a></div>
+    <div class="section__head"><h2 class="h-section">You may also like</h2><a class="link" href="${home0?.path || '/shop/'}">View all</a></div>
     <div class="grid">${related.map((r, i) => card(r, i)).join('')}</div>
   </section>` : '<div style="height:48px"></div>'}
 </div>
@@ -570,7 +614,7 @@ const hero = await heroImage(S.hero_image);
 
 writeFile('index.html', await home(hero));
 writeFile('shop/index.html', catalogue({}));
-for (const c of CATEGORIES) writeFile(`shop/${c.slug}/index.html`, catalogue({ cat: c }));
+for (const c of SECTIONS) writeFile(`${c.path.slice(1)}index.html`, catalogue({ cat: c }));
 for (const p of products) writeFile(`product/${p.slug}/index.html`, productPage(p));
 writeFile('how-to-order/index.html', howToOrder());
 for (const k of ['delivery', 'returns', 'privacy', 'terms', 'contact']) { const h = policyPage(k); if (h) writeFile(`${k}/index.html`, h); }
@@ -596,11 +640,11 @@ if (PAGES) {
 } else writeFile('_redirects', redirects.join('\n') + '\n');
 writeFile('robots.txt', UNLISTED ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /admin/\n${SITE ? `Sitemap: ${SITE}/sitemap.xml\n` : ''}`);
 if (SITE) {
-  const urls = ['/', '/shop/', ...CATEGORIES.map(c => `/shop/${c.slug}/`), ...products.map(p => `/product/${p.slug}/`), '/how-to-order/', '/delivery/', '/returns/', '/privacy/', '/terms/', '/contact/'];
+  const urls = ['/', '/shop/', ...SECTIONS.map(c => c.path), ...products.map(p => `/product/${p.slug}/`), '/how-to-order/', '/delivery/', '/returns/', '/privacy/', '/terms/', '/contact/'];
   writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}\n</urlset>\n`);
 }
 writeFile('site.webmanifest', JSON.stringify({ name: 'NEXTDROP', short_name: 'NEXTDROP', description: S.tagline, start_url: '/', display: 'standalone', background_color: '#0a0a0a', theme_color: '#0a0a0a', icons: [{ src: '/brand/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/brand/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2));
 
-console.log(`\nNEXTDROP built: ${products.length} products (${allProducts.length - products.length} hidden/skipped), ${CATEGORIES.length} categories → dist/`);
+console.log(`\nNEXTDROP built: ${products.length} products (${allProducts.length - products.length} hidden/skipped), ${SECTIONS.length} sections → dist/`);
 if (hasDemo) console.log(`⚠ ${products.filter(p => p.demo).length} DEMO products are still live. Delete or hide them before launch.`);
 if (warnings.length) { console.log('\nThings to check:'); warnings.forEach(w => console.log('  • ' + w)); }

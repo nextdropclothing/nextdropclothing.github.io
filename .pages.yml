@@ -20,18 +20,39 @@ content:
       - { name: images, label: "Photos (first one is the main photo)", type: image, list: true }
       - { name: description, label: "Description", type: text }
       - { name: details, label: "Details (one per line item, e.g. 100% cotton)", type: string, list: true }
-      - name: categories
-        label: Categories
+      - name: departments
+        label: "Department (tick one or more: Men, Women, Kids, Accessories)"
         type: select
         list: true
         options:
           values:
-            - { value: mens-clothing, label: "Men’s Clothing" }
-            - { value: trainers-footwear, label: "Trainers & Footwear" }
-            - { value: womens-clothing, label: "Women’s Clothing" }
-            - { value: watches-jewellery, label: "Watches & Jewellery" }
-            - { value: matching-sets, label: "Matching Sets & Outfits" }
+            - { value: men, label: "Men" }
+            - { value: women, label: "Women" }
+            - { value: kids, label: "Kids" }
             - { value: accessories, label: "Accessories" }
+      - name: types
+        label: "Section (tick one or more, e.g. Tracksuits + Sets)"
+        type: select
+        list: true
+        options:
+          values:
+            - { value: trainers, label: "Trainers & Shoes" }
+            - { value: jeans, label: "Jeans" }
+            - { value: jumpers-hoodies, label: "Jumpers & Hoodies" }
+            - { value: shorts, label: "Shorts" }
+            - { value: tracksuits, label: "Tracksuits" }
+            - { value: sets, label: "Sets" }
+            - { value: t-shirts, label: "T-Shirts" }
+            - { value: jackets, label: "Jackets & Coats" }
+            - { value: bags, label: "Bags (Accessories)" }
+            - { value: hats, label: "Caps & Hats (Accessories)" }
+            - { value: jewellery, label: "Jewellery (Accessories)" }
+            - { value: watches, label: "Watches (Accessories)" }
+            - { value: gift-sets, label: "Gift Sets (Accessories)" }
+            - { value: fragrance, label: "Aftershave & Perfume (Accessories)" }
+            - { value: sunglasses, label: "Sunglasses (Accessories)" }
+            - { value: wallets, label: "Wallets & Purses (Accessories)" }
+            - { value: scarves, label: "Scarves & Gloves (Accessories)" }
       - { name: sizes, label: "Sizes (add one at a time, e.g. S, M, L)", type: string, list: true }
       - name: colours
         label: Colours
@@ -82,6 +103,3 @@ content:
         list: true
         fields:
           - { name: product, label: "Product name (exactly as written)", type: string }
-  
-
-Hey, do you see this script that I got, right? I'm building a website in GitHub and all that as you can see inside there. But I forgot to add in that I need to have like a sunglasses section, a hat section, scarves, purses and like wallets and stuff like that. As you can see I've already got some in there. But can you add them in as well for me please? Wallets, bags, scarves, perfumes, hats and stuff like this please. The ones ain't in there. Obviously there's loads already in there but I just need to add the ones that's missing

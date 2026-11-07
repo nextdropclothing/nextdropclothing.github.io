@@ -47,14 +47,14 @@ window.NDinit = () => {
     if (params.get('q')) input.value = params.get('q');
     if (params.get('sort') && [...sortSel.options].some(o => o.value === params.get('sort'))) sortSel.value = params.get('sort');
 
-    const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u2019'`]/g, '');
     function apply() {
       const q = norm(input.value.trim());
       const terms = q.split(/\s+/).filter(Boolean);
       let shown = 0;
       cards.forEach(c => {
-        const hay = c.dataset.search;
-        const ok = terms.every(t => hay.includes(t));
+        const words = c._words || (c._words = c.dataset.search.split(/[^a-z0-9]+/).filter(Boolean));
+        const ok = terms.every(t => { const tt = t.replace(/[^a-z0-9]/g, ''); return !tt || words.some(w => w.startsWith(tt)); });
         c.hidden = !ok; if (ok) shown++;
       });
       const s = sortSel.value;
