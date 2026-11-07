@@ -329,7 +329,7 @@ function catalogue({ cat = null }) {
   const title = cat ? cat.name : 'Shop all';
   const chips = [`<a class="chip" href="/shop/"${!cat ? ' aria-current="page"' : ''}>All</a>`, ...CATEGORIES.map(c => `<a class="chip" href="/shop/${c.slug}/"${cat?.slug === c.slug ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)].join('');
   const emptyCategory = `<div class="empty">
-      <h2>${cat?.slug === 'offers' ? 'No offers right now' : 'Nothing here yet'}</h2>
+      <h2>${!products.length ? 'New collection coming soon' : cat?.slug === 'offers' ? 'No offers right now' : 'Nothing here yet'}</h2>
       <p>${cat?.slug === 'offers' ? 'There are no current offers. Check back soon, or browse the full collection.' : `New pieces for ${esc(cat?.name || 'this category')} are on the way. Browse the full collection, or message us to ask what’s coming.`}</p>
       <div class="row"><a class="btn" href="/shop/">Browse collection</a>${WA ? `<a class="btn btn--ghost" href="${waLink(`Hi NEXTDROP, do you have anything coming in ${cat?.name || ''}?`)}" target="_blank" rel="noopener">Ask on WhatsApp</a>` : ''}</div>
     </div>`;
@@ -383,6 +383,7 @@ async function home(hero) {
   </div>
 </section>
 
+${!products.length ? `<section class="section"><div class="wrap"><div class="empty"><h2>New collection coming soon</h2><p>We’re preparing our new collection. Message us on WhatsApp or Telegram to hear first when it drops.</p><div class="row">${contactButtons()}</div></div></div></section>` : ''}
 <section class="section">
   <div class="wrap">
     <div class="section__head"><div><span class="eyebrow">Shop by category</span><h2 class="h-section">Clothing, footwear &amp; more</h2></div><a class="link" href="/shop/">Shop all</a></div>

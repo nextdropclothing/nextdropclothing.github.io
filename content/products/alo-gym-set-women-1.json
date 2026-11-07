@@ -16,7 +16,7 @@
   "availability": "sold_out",
   "new_arrival": false,
   "offer": false,
-  "hidden": false,
+  "hidden": true,
   "demo": false,
   "date": "2026-11-05"
 }

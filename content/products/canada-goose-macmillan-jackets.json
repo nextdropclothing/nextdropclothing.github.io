@@ -16,7 +16,7 @@
   "new_arrival": false,
   "offer": true,
   "was_price": 150,
-  "hidden": false,
+  "hidden": true,
   "demo": false,
   "date": "2026-11-02"
 }
