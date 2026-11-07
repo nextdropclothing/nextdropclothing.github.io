@@ -9,13 +9,16 @@
     "/uploads/IMG_5207.jpeg"
   ],
   "description": "Berghaus Gillets\nSizes S to XXL\n\n£55🔥🔥\n1/2 day delivery 🚚 🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-04"
 }
