@@ -8,13 +8,16 @@
     "/uploads/IMG_5345.jpeg"
   ],
   "description": "DSQ JEANS \nSIZES 28 WAIST TO 40 WAIST\n\n£75🔥🔥\n1-2 days delivery 🚚🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jeans"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
