@@ -10,13 +10,16 @@
     "/uploads/IMG_4654.jpeg"
   ],
   "description": "SUPER CLONE CANADA GOOSE TRACKY SET \nSIZES SMALL TO XXL\n\n£125🔥🔥\n1/2 days delivery 🚚 \n🔥🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
