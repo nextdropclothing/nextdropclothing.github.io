@@ -10,14 +10,17 @@
     "/uploads/IMG_4940.jpeg",
     "/uploads/IMG_4936.jpeg"
   ],
-  "description": "HIGH END HERMES BOUNCING SHOES JUST LANDED SIZES 7 TO 11 £130\n\n1/2 days delivery 🚚 \n🔥🔥🔥",
-  "categories": [
-    "trainers-footwear"
+  "description": "HIGH END HERMES BOUNCING SHOES JUST LANDED \nSIZES 7 TO 11 \n\n£130\n\n1/2 days delivery 🚚 \n🔥🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
   ],
   "availability": "available",
-  "new_arrival": false,
+  "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
