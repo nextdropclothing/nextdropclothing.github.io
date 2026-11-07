@@ -9,13 +9,17 @@
     "/uploads/IMG_5215.jpeg"
   ],
   "description": "🔥JO MALONE CANDLE FRAGRANCE SET AVAILABLE NOW IN \n\n🔹LIME BASIL & MANDARIN \n🔹POMEGRANATE & NOIR\n🔹ENGLISH PEAR & FREESIA\n\n▪️CANDLE WEIGHT 600g\n▪️FRAGRANCE 100ml\n\n\n🔸£50🔥\n1-3 days delivery 🚚🔥🔥",
-  "categories": [
+  "departments": [
     "accessories"
+  ],
+  "types": [
+    "gift-sets",
+    "fragrance"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-04"
 }
