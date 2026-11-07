@@ -14,15 +14,18 @@
     "/uploads/IMG_4527.jpeg",
     "/uploads/IMG_4526.jpeg"
   ],
-  "description": "B30 Dior men’s trainers \nsizes 6 to 11\n\n£130🔥🔥\n\n1/2 days delivery 🚚 \n",
-  "categories": [
-    "trainers-footwear"
+  "description": "B30 Dior men’s trainers \nsizes 6 to 11\n\nWAS £130 NOW 100🔥🔥\n\n1/2 days delivery 🚚 \n",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": true,
   "was_price": 130,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
