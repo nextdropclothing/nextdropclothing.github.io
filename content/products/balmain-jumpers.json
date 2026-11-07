@@ -8,13 +8,16 @@
     "/uploads/IMG_4247.jpeg"
   ],
   "description": "Superclone \nBalmain jumpers \nSizes S to XXL\n\n£70 🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
