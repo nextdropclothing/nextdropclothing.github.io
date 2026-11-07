@@ -16,14 +16,17 @@
     "/uploads/IMG_5384.jpeg"
   ],
   "description": "ALO RECOVERY SLIPPERS \nFOR WOMENS / GIRLS\n\nUk-SZ  3-4-5-6-7-8\n\n£45",
-  "categories": [
-    "trainers-footwear",
-    "womens-clothing"
+  "departments": [
+    "women",
+    "kids"
+  ],
+  "types": [
+    "trainers"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-05"
 }
