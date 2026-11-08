@@ -1,0 +1,23 @@
+{
+  "name": "Gucci polo ",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_6471.jpeg",
+    "/uploads/IMG_6470.jpeg",
+    "/uploads/IMG_6470-1.jpeg"
+  ],
+  "description": "Gucci polo \nSize S upto xxl\n\nSALE WAS £55 NOW ONLY £40🔥🔥\n\n1/2 Days Delivery 🚛 🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 55,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
