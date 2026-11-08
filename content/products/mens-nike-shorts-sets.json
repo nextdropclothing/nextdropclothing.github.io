@@ -8,13 +8,16 @@
     "/uploads/IMG_5018.jpeg"
   ],
   "description": "Mens nike shorts sets\nSizes S to XXL\n\n£55 🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "shorts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
