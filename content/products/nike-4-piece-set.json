@@ -1,6 +1,6 @@
 {
   "name": "NIKE 4 PIECE SET",
-  "price": 80,
+  "price": 75,
   "images": [
     "/uploads/IMG_6218.jpeg",
     "/uploads/IMG_6217.jpeg",
@@ -8,15 +8,18 @@
     "/uploads/IMG_6215.jpeg",
     "/uploads/IMG_6214.jpeg"
   ],
-  "description": "🔥NIKE 4 PIECE SET IN 4 COLOURS \n\nSIZES SMALL TO  XXL\n\n£80🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "description": "🔥NIKE 4 PIECE SET IN 4 COLOURS \n\nSIZES SMALL TO  XXL\n\n£75🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits",
+    "shorts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-07"
 }
