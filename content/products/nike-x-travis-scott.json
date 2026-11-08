@@ -8,13 +8,16 @@
     "/uploads/IMG_5158.jpeg"
   ],
   "description": "SUPER CLONE NIKE X TRAVIS SCOTT \nSIZES 7 TO 12 \n\n£90🔥🔥\n1-2 days delivery 🚚 \n🔥🔥🔥",
-  "categories": [
-    "trainers-footwear"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-03"
 }
