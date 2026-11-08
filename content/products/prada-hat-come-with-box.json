@@ -1,0 +1,24 @@
+{
+  "name": "PRADA HAT COME WITH BOX",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_6484.jpeg",
+    "/uploads/IMG_6483.jpeg",
+    "/uploads/IMG_6482.jpeg",
+    "/uploads/IMG_6481.jpeg"
+  ],
+  "description": "AAA MENS PRADA HAT COME WITH BOX\n\n£40🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men",
+    "accessories"
+  ],
+  "types": [
+    "hats"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
