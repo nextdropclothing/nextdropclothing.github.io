@@ -1,0 +1,23 @@
+{
+  "name": "NIKE TRACKSUITS",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_6473.jpeg",
+    "/uploads/IMG_6472.jpeg",
+    "/uploads/IMG_6474.jpeg",
+    "/uploads/IMG_6475.jpeg"
+  ],
+  "description": "NEW ARRIVAL 🔥\n\nNIKE TRACKSUITS\nSMALL TO 2XL\n\n£70🔥🔥\n1/2 DAYS DELIVERY🚛 🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
