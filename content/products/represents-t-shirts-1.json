@@ -8,8 +8,11 @@
     "/uploads/IMG_4474-1.jpeg"
   ],
   "description": "Superclone Represents T-shirts\nSizes S to XXL \n£60🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
   ],
   "availability": "available",
   "new_arrival": false,
