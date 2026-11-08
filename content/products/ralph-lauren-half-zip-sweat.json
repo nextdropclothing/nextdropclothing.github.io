@@ -4,9 +4,12 @@
   "images": [
     "/uploads/IMG_4225.jpeg"
   ],
-  "description": "SUPER CLONE RALPH LAUREN HALF ZIP SWEAT SIZES SMALL TO XXL £70\n\n1/2 days delivery 🚚 \n🔥🔥🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "description": "SUPER CLONE RALPH LAUREN HALF ZIP SWEAT \nSIZES SMALL TO XXL \n\n£70\n1/2 days delivery 🚚 \n🔥🔥🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
   ],
   "sizes": [
     "S",
@@ -18,7 +21,7 @@
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
