@@ -8,14 +8,16 @@
     "/uploads/966c49ea-b9c7-4194-b35e-75477b1ecc25.jpeg"
   ],
   "description": "Men’s montirex tracksuits \n\nSize small-xxl \n\n1/2 day delivery 🚚 \n\n£65 each",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": true,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-02"
 }
