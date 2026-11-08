@@ -1,0 +1,23 @@
+{
+  "name": "MONTIREX TRACKSUITS",
+  "price": 65,
+  "images": [
+    "/uploads/IMG_6444.jpeg",
+    "/uploads/IMG_6445.jpeg",
+    "/uploads/IMG_6446.jpeg",
+    "/uploads/IMG_6447.jpeg"
+  ],
+  "description": "MONTIREX TRACKSUITS\nSMALL TO XXL\n\n£65🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
