@@ -1,0 +1,22 @@
+{
+  "name": "CP COMPANY JUMPERS",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_6450.jpeg",
+    "/uploads/IMG_6448.jpeg",
+    "/uploads/IMG_6449.jpeg"
+  ],
+  "description": "CP COMPANY JUMPERS\nSMALL TO XL\n\n£60🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
