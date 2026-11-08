@@ -1,6 +1,6 @@
 {
   "name": "Nike 3pc sets ",
-  "price": 70,
+  "price": 65,
   "images": [
     "/uploads/IMG_4831.jpeg",
     "/uploads/IMG_4829.jpeg",
@@ -8,10 +8,12 @@
     "/uploads/IMG_4827.jpeg",
     "/uploads/IMG_4826.jpeg"
   ],
-  "description": "Superclone Nike 3pc sets \nSizes S to XL\n\n£70🔥🔥🔥\n\n1/2 days delivery 🚚 🔥🔥",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "description": "Superclone Nike 3pc sets \nSizes S to XL\n\n£65🔥🔥🔥\n\n1/2 days delivery 🚚 🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "shorts"
   ],
   "availability": "available",
   "new_arrival": false,
