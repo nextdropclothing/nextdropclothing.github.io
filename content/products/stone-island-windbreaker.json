@@ -1,0 +1,23 @@
+{
+  "name": "STONE ISLAND WINDBREAKER",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_6480.jpeg",
+    "/uploads/IMG_6479.jpeg",
+    "/uploads/IMG_6476.jpeg",
+    "/uploads/IMG_6477.jpeg"
+  ],
+  "description": "AAA MENS STONE ISLAND WINDBREAKER \nSIZE S TO XL \n\n£70🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
