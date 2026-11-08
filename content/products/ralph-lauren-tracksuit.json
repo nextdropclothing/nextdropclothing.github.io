@@ -1,21 +1,25 @@
 {
   "name": "Ralph lauren tracksuit ",
-  "price": 70,
+  "price": 60,
   "images": [
     "/uploads/IMG_4478.jpeg",
     "/uploads/IMG_4475.jpeg",
     "/uploads/IMG_4477.jpeg",
     "/uploads/IMG_4476.jpeg"
   ],
-  "description": "Superclone Ralph lauren tracksuit \nSizes S to XXL\n\n£70\n🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "description": "Superclone Ralph lauren tracksuit \nSizes S to XXL\n\n£60\n🔥🔥\n1-2 days delivery 🚚",
+  "departments": [
+    "men",
+    "women"
+  ],
+  "types": [
+    "tracksuits",
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
