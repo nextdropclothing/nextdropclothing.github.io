@@ -1,0 +1,21 @@
+{
+  "name": "Canda goose polo",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_6468.jpeg"
+  ],
+  "description": "Canda goose polo\nSizes  S-M-L  \n\nSALE WAS £60 NOW ONLY £45🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 60,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-08"
+}
