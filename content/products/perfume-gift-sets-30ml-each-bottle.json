@@ -11,13 +11,17 @@
     "/uploads/IMG_4248.jpeg"
   ],
   "description": "Perfume Gift sets\n30ml each bottle \n\n£50 each set 🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
+  "departments": [
     "accessories"
   ],
+  "types": [
+    "fragrance",
+    "gift-sets"
+  ],
   "availability": "available",
-  "new_arrival": true,
+  "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
