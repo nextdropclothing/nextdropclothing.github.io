@@ -1,20 +1,23 @@
 {
   "name": "PRADA TRACKSUIT SET",
-  "price": 125,
+  "price": 110,
   "images": [
     "/uploads/IMG_4664.jpeg",
     "/uploads/IMG_4662.jpeg",
     "/uploads/IMG_4661.jpeg"
   ],
-  "description": "SUPER CLONE PRADA TRACKSUIT SET\nSIZES SMALL TO XXL \n\n£125🔥🔥\n1/2 days delivery 🚚 \n🔥🔥🔥",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "description": "SUPER CLONE PRADA TRACKSUIT SET\nSIZES SMALL TO XXL \n\nWAS 125 - NOW 110🔥🔥\n1/2 days delivery 🚚 \n🔥🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
-  "new_arrival": false,
-  "offer": false,
-  "hidden": true,
+  "new_arrival": true,
+  "offer": true,
+  "was_price": 125,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
