@@ -1,0 +1,40 @@
+{
+  "name": "NEW BALANCE Trainers ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_6767.jpeg",
+    "/uploads/IMG_6768.jpeg",
+    "/uploads/IMG_6766.jpeg",
+    "/uploads/IMG_6771.jpeg",
+    "/uploads/IMG_6772.jpeg",
+    "/uploads/IMG_6770.jpeg",
+    "/uploads/IMG_6776.jpeg",
+    "/uploads/IMG_6775.jpeg",
+    "/uploads/IMG_6774.jpeg",
+    "/uploads/IMG_6779.jpeg",
+    "/uploads/IMG_6780.jpeg",
+    "/uploads/IMG_6778.jpeg",
+    "/uploads/IMG_6784.jpeg",
+    "/uploads/IMG_6783.jpeg",
+    "/uploads/IMG_6782.jpeg",
+    "/uploads/IMG_6788.jpeg",
+    "/uploads/IMG_6787.jpeg",
+    "/uploads/IMG_6786.jpeg",
+    "/uploads/IMG_6791.jpeg",
+    "/uploads/IMG_6792.jpeg",
+    "/uploads/IMG_6790.jpeg"
+  ],
+  "description": "WOMENS NEW BALANCE \nSIZES 3 TO 8\n£55\n1/2 DAYS DELIVERY🚛",
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-09"
+}
