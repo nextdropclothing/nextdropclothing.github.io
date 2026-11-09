@@ -7,14 +7,17 @@
     "/uploads/IMG_4215-1.jpeg"
   ],
   "description": "Superclone Stone island tracksuits \nSizes S to XXL\n\n£65 🔥🔥\n\n1/2 days  delivery",
-  "categories": [
-    "mens-clothing",
-    "matching-sets"
+  "departments": [
+    "men",
+    "women"
+  ],
+  "types": [
+    "tracksuits"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-02"
 }
