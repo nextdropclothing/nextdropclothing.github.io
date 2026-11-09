@@ -15,13 +15,16 @@
     "/uploads/IMG_4423-1.jpeg"
   ],
   "description": "Superclone Stone island T shirts \n£60\n\n1-2 days delivery 🚚 \n\nSizes S to XXL\n\n🔥🔥",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-01"
 }
