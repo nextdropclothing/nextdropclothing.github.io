@@ -1,0 +1,21 @@
+{
+  "name": "Burberry Polo ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_6522.jpeg",
+    "/uploads/IMG_6523.jpeg"
+  ],
+  "description": "Superclone Burberry Polo \nSizes S to XXL\n\n£55🔥🔥\n1/2 Days Delivery 🚛 🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-09"
+}
