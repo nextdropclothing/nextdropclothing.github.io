@@ -8,13 +8,16 @@
     "/uploads/IMG_5254.jpeg"
   ],
   "description": "Stone island T-Shirts \nSize small to xxl\n\n£45🔥🔥\n1-3 days delivery 🚚 ",
-  "categories": [
-    "mens-clothing"
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
   ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-11-04"
 }
