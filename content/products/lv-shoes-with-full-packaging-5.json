@@ -1,0 +1,25 @@
+{
+  "name": "LV SHOES WITH FULL PACKAGING",
+  "price": 95,
+  "images": [
+    "/uploads/IMG_6740.jpeg",
+    "/uploads/IMG_6741.jpeg",
+    "/uploads/IMG_6742.jpeg",
+    "/uploads/IMG_6743.jpeg",
+    "/uploads/IMG_6744.jpeg"
+  ],
+  "description": "WAS £120 NOW £95🤩🤩\n\nLV SHOES WITH FULL PACKAGING AVAILABLE IN SIZE 10 & 12\n\n\n£95🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 120,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-09"
+}
