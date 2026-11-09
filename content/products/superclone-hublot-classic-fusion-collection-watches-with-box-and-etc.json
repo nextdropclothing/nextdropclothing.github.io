@@ -1,6 +1,6 @@
 {
   "name": "Superclone  Hublot Classic Fusion collection watches  With box and etc ",
-  "price": 130,
+  "price": 120,
   "images": [
     "/uploads/IMG_3983.jpeg",
     "/uploads/IMG_3982.jpeg",
@@ -12,9 +12,12 @@
     "/uploads/IMG_3976.jpeg",
     "/uploads/IMG_3975.jpeg"
   ],
-  "description": "Superclone Hublot Classic Fusion collection watches With box and etc \n£130\n🔥🔥\n1-2 days delivery 🚚",
-  "categories": [
-    "watches-jewellery"
+  "description": "Superclone Hublot Classic Fusion collection watches With box and etc \n£120\n🔥🔥\n1-2 days delivery 🚚",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "watches"
   ],
   "colours": [
     {
@@ -48,7 +51,7 @@
   "availability": "available",
   "new_arrival": false,
   "offer": false,
-  "hidden": true,
+  "hidden": false,
   "demo": false,
   "date": "2026-10-31"
 }
