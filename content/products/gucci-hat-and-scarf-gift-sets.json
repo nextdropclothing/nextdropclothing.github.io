@@ -1,0 +1,26 @@
+{
+  "name": "GUCCI HAT & SCARF GIFT SETS",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_6807.jpeg",
+    "/uploads/IMG_6806.jpeg",
+    "/uploads/IMG_6805.jpeg",
+    "/uploads/IMG_6804.jpeg",
+    "/uploads/IMG_6803.jpeg",
+    "/uploads/IMG_6802.jpeg",
+    "/uploads/IMG_6801.jpeg"
+  ],
+  "description": "🔥GUCCI HAT & SCARF GIFT SETS AVAILABLE \n\n£50🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "gift-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-09"
+}
