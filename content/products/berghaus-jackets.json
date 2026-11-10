@@ -1,0 +1,24 @@
+{
+  "name": "BERGHAUS JACKETS",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_6926.jpeg",
+    "/uploads/IMG_6927.jpeg",
+    "/uploads/IMG_6928.jpeg",
+    "/uploads/IMG_6930.jpeg",
+    "/uploads/IMG_6929.jpeg"
+  ],
+  "description": "KIDS BERGHAUS JACKETS\n SIZES AGE 3/4 TO 13/14 \n\n£55🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
