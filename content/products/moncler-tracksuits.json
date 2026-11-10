@@ -1,0 +1,23 @@
+{
+  "name": "Moncler Tracksuits",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_6937.jpeg",
+    "/uploads/IMG_6936.jpeg",
+    "/uploads/IMG_6935.jpeg"
+  ],
+  "description": "🔥 NEXTDROP – LIMITED TIME OFFER 🔥\n\nMoncler Tracksuits\nSizes: S – XL\n\n£75 NOW £60🔥\n🚛 1–2 Days Delivery🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": true,
+  "was_price": 75,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
