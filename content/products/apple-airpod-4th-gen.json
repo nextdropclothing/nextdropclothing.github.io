@@ -1,0 +1,23 @@
+{
+  "name": "APPLE AIRPOD 4TH GEN",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_7030.jpeg",
+    "/uploads/IMG_5526.jpeg",
+    "/uploads/IMG_5525.jpeg",
+    "/uploads/IMG_7033.jpeg"
+  ],
+  "description": "APPLE AIRPOD 4TH GEN\n\n£40🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "gift-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
