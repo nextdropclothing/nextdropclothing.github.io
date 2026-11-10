@@ -1,0 +1,22 @@
+{
+  "name": "APPLE AIRPOD MAX",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_7034.jpeg",
+    "/uploads/IMG_7035.jpeg",
+    "/uploads/IMG_7038.jpeg"
+  ],
+  "description": "APPLE AIRPOD MAX \n\n£40🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "gift-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
