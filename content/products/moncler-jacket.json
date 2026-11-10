@@ -1,0 +1,25 @@
+{
+  "name": "Moncler Jacket",
+  "price": 150,
+  "images": [
+    "/uploads/IMG_7024.jpeg",
+    "/uploads/IMG_7026.jpeg",
+    "/uploads/IMG_7023.jpeg",
+    "/uploads/IMG_7022.jpeg",
+    "/uploads/IMG_7027.jpeg",
+    "/uploads/IMG_7028.jpeg"
+  ],
+  "description": "Moncler Jacket\nSizes S-M-L-XL-XXL-XXXL\n\n£150🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
