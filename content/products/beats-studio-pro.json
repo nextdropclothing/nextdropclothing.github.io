@@ -1,0 +1,26 @@
+{
+  "name": "BEATS  STUDIO PRO",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_7039.jpeg",
+    "/uploads/IMG_7040.jpeg",
+    "/uploads/IMG_7041.jpeg",
+    "/uploads/IMG_7042.jpeg",
+    "/uploads/IMG_7042-1.jpeg",
+    "/uploads/IMG_7043.jpeg",
+    "/uploads/IMG_7044.jpeg"
+  ],
+  "description": "BEATS  STUDIO PRO\n\n£40🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "gift-sets"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-11"
+}
