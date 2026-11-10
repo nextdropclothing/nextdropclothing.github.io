@@ -1,0 +1,23 @@
+{
+  "name": "NIKE 3pc SET",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_6943.jpeg",
+    "/uploads/IMG_6942.jpeg",
+    "/uploads/IMG_6944.jpeg",
+    "/uploads/IMG_6941.jpeg"
+  ],
+  "description": "NEW ARRIVAL 🔥\n\nNIKE 3pc SET\nSMALL TO 2XL\n\n£75🔥🔥 \n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "shorts"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
