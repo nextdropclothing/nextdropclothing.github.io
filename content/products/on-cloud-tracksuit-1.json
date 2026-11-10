@@ -1,0 +1,24 @@
+{
+  "name": "On cloud tracksuit ",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_7009.jpeg",
+    "/uploads/IMG_7011.jpeg",
+    "/uploads/IMG_7012.jpeg",
+    "/uploads/IMG_7013.jpeg",
+    "/uploads/IMG_7014.jpeg"
+  ],
+  "description": "On cloud tracksuit \nSizes S-XL\n\n£75🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
