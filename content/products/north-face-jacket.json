@@ -1,0 +1,23 @@
+{
+  "name": "NORTH FACE JACKET",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_6920.jpeg",
+    "/uploads/IMG_6921.jpeg",
+    "/uploads/IMG_6922.jpeg",
+    "/uploads/IMG_6923.jpeg"
+  ],
+  "description": "KIDS NORTH FACE JACKET\n\nSize: 3/4 to 13/14 years\n\n£60",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
