@@ -1,0 +1,24 @@
+{
+  "name": "ESSENTIAL TRACKSUITS ",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_6844.jpeg",
+    "/uploads/IMG_6845.jpeg",
+    "/uploads/IMG_6842.jpeg",
+    "/uploads/IMG_6843.jpeg"
+  ],
+  "description": "ESSENTIAL TRACKY SIZES \nSMALL TO XL \n\n£70🔥🔥\n1-2 days delivery 🚚🔥🔥",
+  "departments": [
+    "men",
+    "women"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-10"
+}
