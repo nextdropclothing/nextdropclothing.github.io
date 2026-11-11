@@ -1,0 +1,31 @@
+{
+  "name": "CP COMPANY WINDBREAKER JACKETS ",
+  "price": 90,
+  "images": [
+    "/uploads/IMG_7246.jpeg",
+    "/uploads/IMG_7244.jpeg",
+    "/uploads/IMG_7242.jpeg",
+    "/uploads/IMG_7241.jpeg",
+    "/uploads/IMG_7239.jpeg",
+    "/uploads/IMG_7240.jpeg",
+    "/uploads/IMG_7238.jpeg",
+    "/uploads/IMG_7237.jpeg",
+    "/uploads/IMG_7236.jpeg",
+    "/uploads/IMG_7235.jpeg",
+    "/uploads/IMG_7233.jpeg",
+    "/uploads/IMG_7234.jpeg"
+  ],
+  "description": "🔥BACK IN STOCK\nCP COMPANY WINDBREAKER JACKETS \n\nSIZES - SMALL TO XXL \n\n£90🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-11"
+}
