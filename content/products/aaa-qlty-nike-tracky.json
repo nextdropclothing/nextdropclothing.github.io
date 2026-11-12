@@ -1,0 +1,23 @@
+{
+  "name": "AAA QLTY NIKE TRACKY",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_8157.jpeg",
+    "/uploads/IMG_8155.jpeg",
+    "/uploads/IMG_8154.jpeg",
+    "/uploads/IMG_8153.jpeg"
+  ],
+  "description": "AAA QLTY NIKE TRACKY\nSIZES - S-XL\n\n£55🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-12"
+}
