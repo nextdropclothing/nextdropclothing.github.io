@@ -1,0 +1,23 @@
+{
+  "name": "NIKE AIRFORCE 1 LOW ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_8271.jpeg",
+    "/uploads/IMG_8272.jpeg",
+    "/uploads/IMG_8275.jpeg",
+    "/uploads/IMG_8269.jpeg"
+  ],
+  "description": "WOMEN NIKE AIRFORCE 1 LOW \nSIZES - 3-4-4.5-5.5\n\n£50🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-12"
+}
