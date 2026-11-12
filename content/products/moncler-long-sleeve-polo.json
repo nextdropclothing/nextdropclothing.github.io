@@ -1,0 +1,25 @@
+{
+  "name": "Moncler long sleeve Polo",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_8137.jpeg",
+    "/uploads/IMG_8131.jpeg",
+    "/uploads/IMG_8132.jpeg",
+    "/uploads/IMG_8133.jpeg",
+    "/uploads/IMG_8134.jpeg"
+  ],
+  "description": "Superclone Moncler long sleeve Polo\nSizes S to XXL\n\n£60🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies",
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-12"
+}
