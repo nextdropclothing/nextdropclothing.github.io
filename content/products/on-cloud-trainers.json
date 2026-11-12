@@ -1,0 +1,26 @@
+{
+  "name": "ON CLOUD TRAINERS",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_8115.jpeg",
+    "/uploads/IMG_8116.jpeg",
+    "/uploads/IMG_8114.jpeg",
+    "/uploads/IMG_8119.jpeg",
+    "/uploads/IMG_8120.jpeg",
+    "/uploads/IMG_8118.jpeg"
+  ],
+  "description": "SALE🔥\nWAS £60 NOW £45🤩🔥\n\nMENS ON CLOUD TRAINERS\nSIZES 6 TO 11 \n\nWAS £60 NOW £45🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 60,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-12"
+}
