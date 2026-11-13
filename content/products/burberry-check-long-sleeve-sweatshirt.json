@@ -1,13 +1,13 @@
 {
   "name": "BURBERRY CHECK LONG SLEEVE SWEATSHIRT ",
-  "price": 70,
+  "price": 55,
   "images": [
     "/uploads/IMG_8278.jpeg",
     "/uploads/IMG_8279.jpeg",
     "/uploads/IMG_8282.jpeg",
     "/uploads/IMG_8277.jpeg"
   ],
-  "description": "1:1 🤩 BURBERRY CHECK LONG SLEEVE SWEATSHIRT / JUMPER\nSIZES - S-XXL \n\n£70🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "description": "1:1 🤩 BURBERRY CHECK LONG SLEEVE SWEATSHIRT / JUMPER\nSIZES - S-XXL \n\nWAS £70 NOW £55🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "men"
   ],
@@ -16,7 +16,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 70,
   "hidden": false,
   "demo": false,
   "date": "2026-11-12"
