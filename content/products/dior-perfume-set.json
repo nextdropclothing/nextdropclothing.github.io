@@ -1,6 +1,6 @@
 {
   "name": "DIOR PERFUME SET ",
-  "price": 60,
+  "price": 45,
   "images": [
     "/uploads/IMG_8229.jpeg",
     "/uploads/IMG_8230.jpeg",
@@ -8,7 +8,7 @@
     "/uploads/IMG_8232.jpeg",
     "/uploads/IMG_8233.jpeg"
   ],
-  "description": "🤩BACK IN STOCK🤩\n\n🔥DIOR PERFUME SET OF 4X30ML AVAILABLE\n\n£60🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "description": "🔥DIOR PERFUME SET OF 4X30ML AVAILABLE\n\nWAS £60 NOW £45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "accessories"
   ],
@@ -18,7 +18,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 60,
   "hidden": false,
   "demo": false,
   "date": "2026-11-12"
