@@ -21,7 +21,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 120,
   "hidden": false,
   "demo": false,
   "date": "2026-11-14"
