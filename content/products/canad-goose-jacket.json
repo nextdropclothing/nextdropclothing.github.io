@@ -1,13 +1,13 @@
 {
   "name": "Canad goose jacket ",
-  "price": 115,
+  "price": 105,
   "images": [
     "/uploads/IMG_8264.jpeg",
     "/uploads/IMG_8265.jpeg",
     "/uploads/IMG_8267.jpeg",
     "/uploads/IMG_8268.jpeg"
   ],
-  "description": "Canad goose jacket with dust bag clone \nSizes - Small to XL \n\n£115🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "description": "Canad goose jacket with dust bag clone Small to XL \n\nWAS £115 NOW £105🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "men"
   ],
@@ -16,7 +16,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 115,
   "hidden": false,
   "demo": false,
   "date": "2026-11-12"
