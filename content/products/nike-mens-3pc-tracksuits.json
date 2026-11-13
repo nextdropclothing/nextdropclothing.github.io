@@ -1,0 +1,23 @@
+{
+  "name": "NIKE MEN’S 3PC TRACKSUITS ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_8403.jpeg",
+    "/uploads/IMG_8402.jpeg",
+    "/uploads/IMG_8404.jpeg"
+  ],
+  "description": "NIKE MEN’S 3PC SET TRACKSUITS \n\n📏 Sizes: Small – XL\n\nWAS £75 NOW £60 🤩🔥\n🚛 1–2 DAYS DELIVERY🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 75,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-13"
+}
