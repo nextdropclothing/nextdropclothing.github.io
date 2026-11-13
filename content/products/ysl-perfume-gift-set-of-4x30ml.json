@@ -1,13 +1,13 @@
 {
   "name": "YSL PERFUME GIFT SET Of 4x30ml",
-  "price": 60,
+  "price": 45,
   "images": [
     "/uploads/IMG_8248.jpeg",
     "/uploads/IMG_8254.jpeg",
     "/uploads/IMG_8249.jpeg",
     "/uploads/IMG_8255.jpeg"
   ],
-  "description": "🔥YSL PERFUME GIFT SET Of 4x30ml\n\n£60🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "description": "🔥YSL PERFUME GIFT SET Of 4x30ml\n\nWAS £60 NOW £45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "accessories"
   ],
@@ -17,7 +17,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 60,
   "hidden": false,
   "demo": false,
   "date": "2026-11-12"
