@@ -1,0 +1,22 @@
+{
+  "name": " Alo jacket",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_7968.jpeg",
+    "/uploads/IMG_7969.jpeg",
+    "/uploads/IMG_7967.jpeg"
+  ],
+  "description": "Girls Alo jacket \nsize 4 to 14 yrs old \n\n£45🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-13"
+}
