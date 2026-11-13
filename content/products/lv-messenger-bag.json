@@ -7,7 +7,7 @@
     "/uploads/IMG_8147.jpeg",
     "/uploads/IMG_8148.jpeg"
   ],
-  "description": "🔥LV MESSENGER BAG COMES WITH DUST BAG \n\n£95🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "description": "🔥LV MESSENGER BAG COMES WITH DUST BAG \n\nWAS £110 NOW £95🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "accessories"
   ],
@@ -16,7 +16,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 110,
   "hidden": false,
   "demo": false,
   "date": "2026-11-12"
