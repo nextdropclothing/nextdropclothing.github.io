@@ -1,0 +1,25 @@
+{
+  "name": "PRADA PERFUME GIFT SET ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_8381.jpeg",
+    "/uploads/IMG_8383.jpeg",
+    "/uploads/IMG_8384.jpeg",
+    "/uploads/IMG_8385.jpeg"
+  ],
+  "description": "🔥PRADA PERFUME GIFT SET \n4XBOTTLE OF 30MM\n\nWAS £60 NOW £50🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "fragrance",
+    "gift-sets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 60,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-13"
+}
