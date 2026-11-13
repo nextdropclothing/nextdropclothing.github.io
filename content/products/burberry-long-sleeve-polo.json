@@ -1,0 +1,26 @@
+{
+  "name": "BURBERRY LONG SLEEVE POLO",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_8104.jpeg",
+    "/uploads/IMG_8106.jpeg",
+    "/uploads/IMG_8107.jpeg",
+    "/uploads/IMG_8109.jpeg",
+    "/uploads/IMG_8111.jpeg",
+    "/uploads/IMG_8113.jpeg"
+  ],
+  "description": "🔥BURBERRY LONG SLEEVE POLO\n\nBLACK  SIZES - M - XL - XXL\nNAVY SIZES - SMALL TO XXL\n\n£60🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies",
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-13"
+}
