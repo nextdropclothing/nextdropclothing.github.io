@@ -1,0 +1,23 @@
+{
+  "name": "Moncler tracksuits set ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_8787.jpeg",
+    "/uploads/IMG_8788.jpeg",
+    "/uploads/IMG_8789.jpeg"
+  ],
+  "description": "Moncler tracksuits \nSizes S to XXL\n\nWAS £70 NOW £60🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 70,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-14"
+}
