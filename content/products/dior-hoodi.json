@@ -1,0 +1,22 @@
+{
+  "name": "Dior Hoodi",
+  "price": 75,
+  "images": [
+    "/uploads/IMG_8791.jpeg",
+    "/uploads/IMG_8792.jpeg",
+    "/uploads/IMG_8793.jpeg"
+  ],
+  "description": "Superclone Dior Hoodi \nSizes S to XXL\n\n£75🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "jumpers-hoodies"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-14"
+}
