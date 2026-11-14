@@ -1,0 +1,24 @@
+{
+  "name": "BURBERRY MAN BAG ",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_8721.jpeg",
+    "/uploads/IMG_8720.jpeg",
+    "/uploads/IMG_8718.jpeg",
+    "/uploads/IMG_8715.jpeg"
+  ],
+  "description": "🔥BURBERRY MAN BAG WITH BOX & PAPERWORK AVAILABLE\n\nWAS £100 NOW £70🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "bags"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 100,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-14"
+}
