@@ -1,0 +1,30 @@
+{
+  "name": "Gallery dept t shirt ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_8953-1.jpeg",
+    "/uploads/IMG_8952-1.jpeg",
+    "/uploads/IMG_8951-1.jpeg",
+    "/uploads/IMG_8950.jpeg"
+  ],
+  "description": "Gallery dept t shirt clone quality \nSizes - Small to XXL \n£50🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-15"
+}
