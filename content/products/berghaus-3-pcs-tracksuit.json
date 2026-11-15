@@ -1,0 +1,28 @@
+{
+  "name": "Berghaus 3 pcs Tracksuit ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_8908.jpeg",
+    "/uploads/IMG_8909.jpeg",
+    "/uploads/IMG_8910.jpeg"
+  ],
+  "description": "Berghaus 3 pcs men’s set \nSizes M/L/XL\n\nWAS £70 NOW £55🤩🔥\n1/2 DAYS DELIVERY🚛 🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "sizes": [
+    "M",
+    "L",
+    "XL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 70,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-15"
+}
