@@ -7,16 +7,24 @@
     "/uploads/IMG_4450.jpeg",
     "/uploads/IMG_4451.jpeg"
   ],
-  "description": "Canada goose tracksuits\nSizes S to XXL\n£65\n\n1/2 days delivery 🚚 \n🔥🔥",
+  "description": "Canada goose tracksuits\nSizes - S to XXL\n\nWAS £80 NOW £65🤩🔥\n1/2 DAYS DELIVERY🚛 🔥🔥\n\nBlack Friday price until 30th November!🤩 ",
   "departments": [
     "men"
   ],
   "types": [
     "tracksuits"
   ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 80,
   "hidden": false,
   "demo": false,
   "date": "2026-11-01"
