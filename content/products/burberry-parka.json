@@ -1,0 +1,33 @@
+{
+  "name": "Burberry Parka ",
+  "price": 130,
+  "images": [
+    "/uploads/IMG_9166.jpeg",
+    "/uploads/IMG_9165.jpeg",
+    "/uploads/IMG_9164.jpeg",
+    "/uploads/IMG_9168.jpeg",
+    "/uploads/IMG_9169.jpeg",
+    "/uploads/IMG_9167.jpeg"
+  ],
+  "description": "Burberry Parka \nAll SIZES SMALL TO XXL\n\n🔥 Luxury cold-weather essential\n🧵 Crafted from premium materials\n\n£130🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men",
+    "women"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
