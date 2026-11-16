@@ -1,0 +1,30 @@
+{
+  "name": "Nike tracksuit set ",
+  "price": 65,
+  "images": [
+    "/uploads/IMG_9178.jpeg",
+    "/uploads/IMG_9177.jpeg",
+    "/uploads/IMG_9176.jpeg",
+    "/uploads/IMG_9179.jpeg"
+  ],
+  "description": "Men’s NIKE Tracksuits set \nSuperclone \n\nMen’s - S to XXL\n£65🔥🔥\n\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
