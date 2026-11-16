@@ -1,0 +1,29 @@
+{
+  "name": "NIKE Tracksuits set ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_9178-1.jpeg",
+    "/uploads/IMG_9177-1.jpeg",
+    "/uploads/IMG_9176-1.jpeg",
+    "/uploads/IMG_9179-1.jpeg"
+  ],
+  "description": "Kids NIKE Tracksuits set \nSuperclone \n\nKids - 7/8 9/10 11/12 13/14\n£55🔥🔥\n\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "sizes": [
+    "7/8",
+    "9/10",
+    "11/12",
+    "13/14"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
