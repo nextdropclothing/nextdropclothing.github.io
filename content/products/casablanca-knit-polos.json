@@ -17,7 +17,11 @@
     "jumpers-hoodies"
   ],
   "sizes": [
-    "S"
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
   ],
   "availability": "available",
   "new_arrival": false,
