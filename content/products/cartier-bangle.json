@@ -1,0 +1,24 @@
+{
+  "name": "CARTIER BANGLE",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_9144.jpeg",
+    "/uploads/IMG_9150.jpeg",
+    "/uploads/IMG_9149.jpeg",
+    "/uploads/IMG_9145.jpeg",
+    "/uploads/IMG_9146.jpeg"
+  ],
+  "description": "CARTIER BANGLE WITH FULL PACKING \n\n£45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "jewellery"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
