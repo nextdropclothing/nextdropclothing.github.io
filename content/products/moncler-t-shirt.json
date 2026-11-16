@@ -1,0 +1,29 @@
+{
+  "name": "Moncler t shirt",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_9129.jpeg",
+    "/uploads/IMG_9128.jpeg",
+    "/uploads/IMG_9127.jpeg"
+  ],
+  "description": "Moncler t shirt clone quality \nSizes - Small to XXL \n\n£50🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
