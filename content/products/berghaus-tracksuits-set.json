@@ -1,0 +1,29 @@
+{
+  "name": "BERGHAUS TRACKSUITS SET",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_9157.jpeg",
+    "/uploads/IMG_9158.jpeg",
+    "/uploads/IMG_9152.jpeg",
+    "/uploads/IMG_9154.jpeg",
+    "/uploads/IMG_9156.jpeg"
+  ],
+  "description": "🔥KIDS BERGHAUS TRACKSUITS AVAILABLE IN AGE\n9/10 - 11/12 - 13/14\n\n£55🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "sizes": [
+    "9/10",
+    "11/12",
+    "13/14"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-16"
+}
