@@ -1,0 +1,23 @@
+{
+  "name": "Stone island Beanie ",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_9556.jpeg",
+    "/uploads/IMG_9555.jpeg",
+    "/uploads/IMG_9553.jpeg",
+    "/uploads/IMG_9554.jpeg"
+  ],
+  "description": "Stone island Beanie \n£40🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "hats"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
