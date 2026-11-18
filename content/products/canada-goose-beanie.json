@@ -1,0 +1,25 @@
+{
+  "name": "Canada goose Beanie",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_9547.jpeg",
+    "/uploads/IMG_9548.jpeg",
+    "/uploads/IMG_9549.jpeg",
+    "/uploads/IMG_9550.jpeg",
+    "/uploads/IMG_9551.jpeg",
+    "/uploads/IMG_9552.jpeg"
+  ],
+  "description": "Canada goose Beanie\n£40🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "hats"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
