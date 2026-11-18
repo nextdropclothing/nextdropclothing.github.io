@@ -1,0 +1,29 @@
+{
+  "name": "Moncler beanie ",
+  "price": 40,
+  "images": [
+    "/uploads/IMG_9540.jpeg",
+    "/uploads/IMG_9537.jpeg",
+    "/uploads/IMG_9539.jpeg",
+    "/uploads/IMG_9538.jpeg",
+    "/uploads/IMG_9536.jpeg",
+    "/uploads/IMG_9535.jpeg",
+    "/uploads/IMG_9534.jpeg",
+    "/uploads/IMG_9533.jpeg",
+    "/uploads/IMG_9532.jpeg"
+  ],
+  "description": "Ladies Moncler beanie \n£40🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "women",
+    "accessories"
+  ],
+  "types": [
+    "hats"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
