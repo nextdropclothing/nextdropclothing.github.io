@@ -1,0 +1,23 @@
+{
+  "name": "LORO PIANA POLO SHIRTS",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_9526.jpeg",
+    "/uploads/IMG_9525.jpeg",
+    "/uploads/IMG_9524.jpeg",
+    "/uploads/IMG_9523.jpeg"
+  ],
+  "description": "🔥LORO PIANA POLO SHIRTS \nSMALL TO XXL \n\n£55🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
