@@ -1,0 +1,27 @@
+{
+  "name": "NIKE TRACKSUITS",
+  "price": 70,
+  "images": [
+    "/uploads/IMG_9522.jpeg",
+    "/uploads/IMG_9520.jpeg",
+    "/uploads/IMG_9521.jpeg",
+    "/uploads/IMG_9519.jpeg",
+    "/uploads/IMG_9518.jpeg"
+  ],
+  "description": "🔥NIKE TRACKSUITS \nSMALL TO XXL \n\n£70🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "sizes": [
+    "A"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
