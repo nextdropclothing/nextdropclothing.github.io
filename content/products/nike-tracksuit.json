@@ -1,0 +1,23 @@
+{
+  "name": "Nike tracksuit ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_9568.jpeg",
+    "/uploads/IMG_9566.jpeg",
+    "/uploads/IMG_9567.jpeg",
+    "/uploads/IMG_9569.jpeg"
+  ],
+  "description": "Men’s NIKE Tracksuits \nSuperclone\n\nSizes- S to XXL\n\n£60🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
