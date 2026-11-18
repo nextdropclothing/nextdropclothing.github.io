@@ -16,7 +16,11 @@
     "tracksuits"
   ],
   "sizes": [
-    "A"
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
   ],
   "availability": "available",
   "new_arrival": false,
