@@ -1,0 +1,24 @@
+{
+  "name": "NIKE TRACKSUITS ",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_9500.jpeg",
+    "/uploads/IMG_9499.jpeg",
+    "/uploads/IMG_9498.jpeg",
+    "/uploads/IMG_9497.jpeg"
+  ],
+  "description": "🔥NIKE TRACKSUITS \nSMALL TO XXL \n\nWAS £70 NOW £60🤩🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 70,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
