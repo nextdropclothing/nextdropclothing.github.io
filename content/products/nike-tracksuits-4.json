@@ -1,0 +1,23 @@
+{
+  "name": "NIKE Tracksuits ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_9568-1.jpeg",
+    "/uploads/IMG_9566-1.jpeg",
+    "/uploads/IMG_9567-1.jpeg",
+    "/uploads/IMG_9569-1.jpeg"
+  ],
+  "description": "Kids NIKE Tracksuits \nSuperclone\n\nKids sizes 7/8 9/10 11/12 13/14 \n\n£50🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
