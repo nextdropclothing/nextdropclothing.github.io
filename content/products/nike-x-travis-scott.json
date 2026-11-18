@@ -1,13 +1,18 @@
 {
   "name": "NIKE X TRAVIS SCOTT ",
-  "price": 90,
+  "price": 65,
   "images": [
     "/uploads/IMG_5157.jpeg",
     "/uploads/IMG_5160.jpeg",
     "/uploads/IMG_5159.jpeg",
-    "/uploads/IMG_5158.jpeg"
+    "/uploads/IMG_5158.jpeg",
+    "/uploads/IMG_9587.jpeg",
+    "/uploads/IMG_9586.jpeg",
+    "/uploads/IMG_9585.jpeg",
+    "/uploads/IMG_9590.jpeg",
+    "/uploads/IMG_9589.jpeg"
   ],
-  "description": "SUPER CLONE NIKE X TRAVIS SCOTT \nSIZES 7 TO 12 \n\n£90🔥🔥\n1-2 days delivery 🚚 \n🔥🔥🔥",
+  "description": "NIKE X TRAVIS SCOTT \nSuper clone \nSizes 6 to 11 \n\nWAS £90 NOW £65🔥🔥\n1/2 DAYS DELIVERY🚛 🔥🔥\n\nBlack Friday price until 30th November!🤩",
   "departments": [
     "men"
   ],
@@ -16,7 +21,8 @@
   ],
   "availability": "available",
   "new_arrival": false,
-  "offer": false,
+  "offer": true,
+  "was_price": 90,
   "hidden": false,
   "demo": false,
   "date": "2026-11-03"
