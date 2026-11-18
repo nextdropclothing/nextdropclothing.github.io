@@ -1,0 +1,28 @@
+{
+  "name": "ON CLOUD TRAINERS",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_9580-1.jpeg",
+    "/uploads/IMG_9579-1.jpeg",
+    "/uploads/IMG_9582-1.jpeg",
+    "/uploads/IMG_9581-2.jpeg",
+    "/uploads/IMG_9578.jpeg",
+    "/uploads/IMG_9577.jpeg",
+    "/uploads/IMG_9576.jpeg",
+    "/uploads/IMG_9575.jpeg"
+  ],
+  "description": "MENS ON CLOUD TRAINERS\nSIZES 7 TO 12\n\nWAS £60 NOW £45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 60,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
