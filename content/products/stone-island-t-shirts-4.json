@@ -1,0 +1,30 @@
+{
+  "name": "Stone island t shirts ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_9562.jpeg",
+    "/uploads/IMG_9561.jpeg",
+    "/uploads/IMG_9559.jpeg",
+    "/uploads/IMG_9560.jpeg"
+  ],
+  "description": "Superclone Stone island t shirts  \nSizes S to XXL \n\n£55🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
