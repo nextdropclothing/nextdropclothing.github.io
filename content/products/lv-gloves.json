@@ -1,0 +1,22 @@
+{
+  "name": "Lv gloves",
+  "price": 30,
+  "images": [
+    "/uploads/IMG_9529.jpeg",
+    "/uploads/IMG_9527.jpeg",
+    "/uploads/IMG_9528.jpeg"
+  ],
+  "description": "Lv gloves \n£30🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "scarves"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-18"
+}
