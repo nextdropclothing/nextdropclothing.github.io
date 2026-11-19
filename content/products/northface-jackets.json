@@ -1,0 +1,23 @@
+{
+  "name": "NORTHFACE JACKETS",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_9719.jpeg",
+    "/uploads/IMG_9716.jpeg",
+    "/uploads/IMG_9718.jpeg",
+    "/uploads/IMG_9717.jpeg"
+  ],
+  "description": "KIDS NORTHFACE JACKETS\n\nBLACK: 3/4 & 5/6\nNAVY: 5/6 & 7/8\nGREY: 3/4, 5/6, & 13/14\n\nWAS £55 NOW £45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "jackets"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-19"
+}
