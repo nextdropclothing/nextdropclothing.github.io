@@ -1,0 +1,23 @@
+{
+  "name": "AMIRI T SHIRTS",
+  "price": 45,
+  "images": [
+    "/uploads/IMG_9705.jpeg",
+    "/uploads/IMG_9706.jpeg",
+    "/uploads/IMG_9704.jpeg"
+  ],
+  "description": "AMIRI T SHIRTS\nSizes - Small - XXL\n\nWAS £55 NOW £45🤩🔥\n1/2 DAYS DELIVERY🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 55,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-19"
+}
