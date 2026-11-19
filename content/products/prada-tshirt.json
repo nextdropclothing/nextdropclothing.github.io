@@ -1,0 +1,24 @@
+{
+  "name": "Prada tshirt",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_9897.jpeg",
+    "/uploads/IMG_9893.jpeg",
+    "/uploads/IMG_9894.jpeg",
+    "/uploads/IMG_9895.jpeg",
+    "/uploads/IMG_9896.jpeg"
+  ],
+  "description": "Prada tshirt clone quality \nSmall to XXL \n\n£50🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-19"
+}
