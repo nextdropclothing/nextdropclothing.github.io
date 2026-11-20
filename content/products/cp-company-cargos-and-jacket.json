@@ -1,0 +1,23 @@
+{
+  "name": "CP COMPANY CARGOS & JACKET ",
+  "price": 135,
+  "images": [
+    "/uploads/IMG_9967.jpeg",
+    "/uploads/IMG_9970.jpeg",
+    "/uploads/IMG_9969.jpeg",
+    "/uploads/IMG_9968.jpeg"
+  ],
+  "description": "Superclone \nCP overshirts £80\nCargo £70\nSet £135🔥🔥\n\nSizes S to XXL\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": true,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-20"
+}
