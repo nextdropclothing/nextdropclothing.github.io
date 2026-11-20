@@ -1,11 +1,33 @@
 {
-  "name": "🔥 NIKE 95  TRAINERS BOXED",
+  "name": " NIKE 95 TRAINERS ",
   "price": 60,
   "images": [
     "/uploads/IMG_9966.jpeg",
-    "/uploads/IMG_9965.jpeg"
+    "/uploads/IMG_9964.jpeg",
+    "/uploads/IMG_9965.jpeg",
+    "/uploads/IMG_9963.jpeg",
+    "/uploads/IMG_9962.jpeg",
+    "/uploads/IMG_9961.jpeg",
+    "/uploads/IMG_9960.jpeg",
+    "/uploads/IMG_9959.jpeg",
+    "/uploads/IMG_9958.jpeg",
+    "/uploads/IMG_9957.jpeg",
+    "/uploads/IMG_9956.jpeg",
+    "/uploads/IMG_9955.jpeg",
+    "/uploads/IMG_9954.jpeg",
+    "/uploads/IMG_9953.jpeg",
+    "/uploads/IMG_9952.jpeg",
+    "/uploads/IMG_9951.jpeg",
+    "/uploads/IMG_9950.jpeg",
+    "/uploads/IMG_9949.jpeg"
   ],
   "description": "🔥 NIKE 95  TRAINERS BOXED\n\nSIZES 6 TO 11 \n\n£60🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "trainers"
+  ],
   "availability": "available",
   "new_arrival": false,
   "offer": false,
