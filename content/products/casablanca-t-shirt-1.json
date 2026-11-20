@@ -1,0 +1,32 @@
+{
+  "name": "CASABLANCA T SHIRT ",
+  "price": 55,
+  "images": [
+    "/uploads/IMG_9947.jpeg",
+    "/uploads/IMG_9946.jpeg",
+    "/uploads/IMG_9945.jpeg",
+    "/uploads/IMG_9944.jpeg",
+    "/uploads/IMG_9943.jpeg",
+    "/uploads/IMG_9948.jpeg"
+  ],
+  "description": "🔥CASABLANCA TEES \nSIZES - SMALL TO XXL \n\n£55🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-20"
+}
