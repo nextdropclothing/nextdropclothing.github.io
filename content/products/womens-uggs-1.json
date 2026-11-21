@@ -1,0 +1,23 @@
+{
+  "name": "WOMENS UGGS",
+  "price": 35,
+  "images": [
+    "/uploads/IMG_0473.jpeg",
+    "/uploads/IMG_0474.jpeg",
+    "/uploads/IMG_0475.jpeg",
+    "/uploads/IMG_0476.jpeg"
+  ],
+  "description": "WOMENS UGG \nSIZES 3 TO 8\n\n£35🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "women"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-21"
+}
