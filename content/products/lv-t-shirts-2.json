@@ -1,0 +1,28 @@
+{
+  "name": "LV T-shirts ",
+  "price": 50,
+  "images": [
+    "/uploads/IMG_0449.jpeg",
+    "/uploads/IMG_0451.jpeg",
+    "/uploads/IMG_0450.jpeg",
+    "/uploads/IMG_0453.jpeg",
+    "/uploads/IMG_0452.jpeg",
+    "/uploads/IMG_0454.jpeg",
+    "/uploads/IMG_0455.jpeg",
+    "/uploads/IMG_0456.jpeg",
+    "/uploads/IMG_0457.jpeg"
+  ],
+  "description": "Superclone LV T-shirts \nSizes - S to XXL \n\n£50🔥🔥\n1/2 Days Delivery 🚛🔥🔥",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "t-shirts"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-21"
+}
