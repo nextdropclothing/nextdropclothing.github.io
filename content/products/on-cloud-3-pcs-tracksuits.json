@@ -1,0 +1,23 @@
+{
+  "name": "On cloud 3 pcs tracksuits",
+  "price": 60,
+  "images": [
+    "/uploads/IMG_0448.jpeg",
+    "/uploads/IMG_0446.jpeg",
+    "/uploads/IMG_0447.jpeg"
+  ],
+  "description": "On cloud 3 pcs tracksuits\nSizes M to XL\n\nWAS £70 NOW £60💥🔥\n1/2 Days Delivery 🚛🔥🔥\n\nBlack Friday price until 30th November!🤩",
+  "departments": [
+    "men"
+  ],
+  "types": [
+    "tracksuits"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": true,
+  "was_price": 70,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-21"
+}
