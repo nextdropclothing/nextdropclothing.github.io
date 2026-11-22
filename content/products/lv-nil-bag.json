@@ -1,0 +1,28 @@
+{
+  "name": "LV NIL BAG",
+  "price": 95,
+  "images": [
+    "/uploads/IMG_0584-1.jpeg",
+    "/uploads/IMG_0583-1.jpeg",
+    "/uploads/IMG_0582-1.jpeg",
+    "/uploads/IMG_0581-1.jpeg",
+    "/uploads/IMG_0580-1.jpeg",
+    "/uploads/IMG_0579-1.jpeg",
+    "/uploads/IMG_0578-1.jpeg",
+    "/uploads/IMG_0577.jpeg",
+    "/uploads/IMG_0585.jpeg"
+  ],
+  "description": "🔥LV NIL BAG WITH FULL PACKAGING\n\n£95🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "accessories"
+  ],
+  "types": [
+    "bags"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-22"
+}
