@@ -1,0 +1,23 @@
+{
+  "name": "KIDS UGGS ",
+  "price": 35,
+  "images": [
+    "/uploads/IMG_1374.jpeg",
+    "/uploads/IMG_1378.jpeg",
+    "/uploads/IMG_1377.jpeg",
+    "/uploads/IMG_1376.jpeg"
+  ],
+  "description": "KIDS UGGS \nSIZES EU 28 /29 /30 /31 /32 /33 /34 /35 \n\n£35🔥🔥\n1/2 DAYS DELIVERY🚛🔥🔥",
+  "departments": [
+    "kids"
+  ],
+  "types": [
+    "trainers"
+  ],
+  "availability": "available",
+  "new_arrival": false,
+  "offer": false,
+  "hidden": false,
+  "demo": false,
+  "date": "2026-11-28"
+}
